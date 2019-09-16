@@ -8,6 +8,11 @@ end
 # Simpler development loop
 activate :livereload
 
+# Settings
+# Accessed as settings.foo
+# TODO Migrate to data?
+set :site_title, "eduard.io"
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
