@@ -12,6 +12,7 @@ activate :livereload
 # Accessed as settings.foo
 # TODO Migrate to data?
 set :site_title, "eduard.io"
+set :fonts_dir,  "typefaces"
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
