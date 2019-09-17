@@ -12,7 +12,15 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
-    <%= yield %>
+  <body class="home">
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <!-- TODO: Extract this to a partial when required -->
+    <footer class="footer">
+      Made with love, brain and coffee in Madrid, 2019.
+    </footer>
   </body>
 </html>
