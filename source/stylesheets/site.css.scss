@@ -1,3 +1,91 @@
 // Here goes the SCSS
+// TODO these two should go somewhere else
 @import 'inter';
 @import 'reset';
+
+// Guideline
+// BEM: Block__Element--Modifier
+// Settings -> Atoms -> Organisms -> Templates -> Pages
+// or ITCSS an o-, c-...
+// One direction margins: DOWN
+
+// Settings
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+$color-background: #FCFCFC;
+$color-text: #333;
+$color-primary: #0074D9;
+$color-highlight: #F9E93B;
+
+// elements.base
+html {
+  font-size: 16px; // To use with REMs (Root EMs)
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-family;
+  margin: 0;
+}
+
+a {
+  color: $color-primary;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+// Typography, including headers
+p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.25rem; // 20px
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+
+.container {
+  max-width: 49rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9rem;
+  margin-top: 9rem; // need to break the rule
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.main {
+  margin-bottom: 4rem;
+}
+
+.footer {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  width: 100%;
+}
