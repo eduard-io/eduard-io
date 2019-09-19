@@ -99,6 +99,10 @@ h2 {
 .main {
   margin-bottom: 4rem;
 
+  &__claim {
+    background: url("/images/fill-body.png") no-repeat top right;
+  }
+
   &__cta {
     background: url("/images/fill-email.png") no-repeat bottom left;
     display: inline-block;
