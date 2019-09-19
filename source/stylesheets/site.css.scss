@@ -14,7 +14,7 @@ $font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
 $color-background: #FCFCFC;
 $color-text: #333;
 $color-primary: #0074D9;
-$color-highlight: #F9E93B;
+$color-highlight: #FAEE75;
 
 // elements.base
 html {
@@ -22,6 +22,10 @@ html {
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: $color-highlight;
 }
 
 body {
