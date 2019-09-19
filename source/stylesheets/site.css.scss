@@ -77,10 +77,49 @@ h2 {
 
 .header {
   margin-bottom: 2rem;
+  position: static;
+
+  &__icon {
+    height: 1.5rem; // 24px;
+    position: relative;
+    left: -32px;
+    top: 4px;
+  }
+
+  &__title {
+    display: inline-block;
+    background: url("/images/fill-header.png") no-repeat center left;
+    width: 210px; // the width of the highlighter
+    margin-left: -32px;
+    padding-left: -44px;
+    line-height: 28px;
+  }
 }
 
 .main {
   margin-bottom: 4rem;
+
+  &__cta {
+    background: url("/images/fill-email.png") no-repeat bottom left;
+    display: inline-block;
+    width: 162px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 32px;//1.5rem;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  &__cta_icon {
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.5rem; // 24px;
+    width: 1.9375rem;
+    margin-right: 0.75rem;
+  }
 }
 
 .footer {
@@ -88,4 +127,21 @@ h2 {
   line-height: 1rem;
   text-align: center;
   width: 100%;
+  vertical-align: middle;
+
+  &__love {
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  &__brain {
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  &__coffee {
+    height: 16px;
+    vertical-align: middle;
+  }
+
 }
