@@ -19,6 +19,7 @@ $color-highlight: #FAEE75;
 // elements.base
 html {
   font-size: 16px; // To use with REMs (Root EMs)
+  background-color: $color-highlight;
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -37,6 +38,11 @@ body {
 
 a {
   color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
@@ -75,8 +81,11 @@ h2 {
   max-width: 49rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 9rem;
-  margin-top: 9rem; // need to break the rule
+  padding-bottom: 1rem;
+  //margin-top: 9rem; // need to break the rule
+  padding-top: 9rem; // need to break the rule
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .header {
@@ -97,6 +106,15 @@ h2 {
     margin-left: -32px;
     padding-left: -44px;
     line-height: 28px;
+  }
+
+  &__title-link {
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -130,9 +148,13 @@ h2 {
   }
 }
 
+.elsewhere {
+  margin-bottom: 9rem;
+}
+
 .footer {
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   text-align: center;
   width: 100%;
   vertical-align: middle;
@@ -151,5 +173,7 @@ h2 {
     height: 16px;
     vertical-align: middle;
   }
+}
+
 
 }
