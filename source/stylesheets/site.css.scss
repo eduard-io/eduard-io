@@ -16,6 +16,8 @@ $color-text: #333;
 $color-primary: #0074D9;
 $color-highlight: #FAEE75;
 
+$responsive-breakpoint: 600px;
+
 // elements.base
 html {
   font-size: 16px; // To use with REMs (Root EMs)
@@ -34,6 +36,7 @@ body {
   color: $color-text;
   font-family: $font-family;
   margin: 0;
+  min-height: 100vh;
 }
 
 a {
@@ -175,7 +178,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $responsive-breakpoint) {
   .container {
     padding-bottom: 1rem;
     padding-top: 4rem; // need to break the rule
