@@ -1,0 +1,49 @@
+.c-header {
+  margin-bottom: 2rem;
+  position: static;
+
+  &__icon {
+    height: 1.5rem; // 24px;
+    position: relative;
+    left: -32px;
+    top: 4px;
+  }
+
+  &__title {
+    display: inline-block;
+    background: url("/images/fill-header.png") no-repeat center left;
+    width: 210px; // the width of the highlighter
+    margin-left: -32px;
+    padding-left: -44px;
+    line-height: 28px;
+  }
+
+  &__title-link {
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $responsive-breakpoint) {
+  .c-header {
+    margin-bottom: 1rem;
+    position: static;
+
+    &__title {
+      width: 210px;
+      margin-left: -32px;
+      padding-left: -44px;
+    }
+
+    &__icon {
+      height: 1.5rem;
+      position: relative;
+      left: -4px;
+      top: 4px;
+    }
+  }
+}

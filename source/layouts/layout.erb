@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>
+      <%= current_page.data.title || config[:site_title] %>
+    </title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body class="home">
+
+    <div class="o-container">
+      <%= yield %>
+
+      <!-- TODO: Extract this to a partial when required -->
+      <footer class="c-footer">
+        Made with <img src="/images/love@2x.png" alt="love" class="c-footer__love"/>,
+        <img src="/images/brain@2x.png" alt="brain" class="c-footer__brain"/> and
+        <img src="/images/coffee@2x.png" alt="coffee" class="c-footer__coffee"/> in Madrid, 2019.
+      </footer>
+    </div>
+  </body>
+</html>

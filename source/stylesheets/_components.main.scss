@@ -1,0 +1,29 @@
+.c-main {
+  margin-bottom: 4rem;
+
+  &__claim {
+    background: url("/images/fill-body.png") no-repeat top right;
+  }
+
+  &__cta {
+    background: url("/images/fill-email.png") no-repeat bottom left;
+    display: inline-block;
+    width: 162px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 32px;//1.5rem;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  &__cta_icon {
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.5rem; // 24px;
+    width: 1.9375rem;
+    margin-right: 0.75rem;
+  }
+}
