@@ -175,5 +175,29 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-bottom: 1rem;
+    padding-top: 4rem; // need to break the rule
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
+  .header {
+    margin-bottom: 1rem;
+    position: static;
+
+    &__title {
+      width: 210px;
+      margin-left: -32px;
+      padding-left: -44px;
+    }
+
+    &__icon {
+      height: 1.5rem;
+      position: relative;
+      left: -4px;
+      top: 4px;
+    }
+  }
 }
