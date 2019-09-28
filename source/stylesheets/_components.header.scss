@@ -14,7 +14,6 @@
     background: url("/images/fill-header.png") no-repeat center left;
     width: 210px; // the width of the highlighter
     margin-left: -32px;
-    padding-left: -44px;
     line-height: 28px;
   }
 
@@ -35,15 +34,11 @@
 
     &__title {
       width: 210px;
-      margin-left: -32px;
-      padding-left: -44px;
+      margin-left: 32px;
     }
 
     &__icon {
-      height: 1.5rem;
-      position: relative;
-      left: -4px;
-      top: 4px;
+      left: -32px;
     }
   }
 }
