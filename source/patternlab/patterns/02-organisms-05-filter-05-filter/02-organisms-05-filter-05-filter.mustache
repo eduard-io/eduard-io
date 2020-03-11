@@ -1,0 +1,23 @@
+<div class="o-filter">
+    <div class="o-filter__row">
+        Types:
+        
+        {{> molecules-filter-list}}
+    </div>
+
+    <div class="o-filter__row">
+        Status:
+        
+        <ul class="m-filter-list">
+            <li class="m-filter-list__item">
+                {{> atoms-filter-toggle:a-filter-toggle--authorized|a-filter-toggle--checked--authorized(text: "Completed") }}
+            </li>
+            <li class="m-filter-list__item">
+                {{> atoms-filter-toggle:a-filter-toggle--created|a-filter-toggle--checked--created(text: "Pending") }}
+            </li>
+            <li class="m-filter-list__item">
+                {{> atoms-filter-toggle:a-filter-toggle--failed|a-filter-toggle--checked--failed(text: "Failed") }}
+            </li>
+        </ul>
+    </div>
+</div>

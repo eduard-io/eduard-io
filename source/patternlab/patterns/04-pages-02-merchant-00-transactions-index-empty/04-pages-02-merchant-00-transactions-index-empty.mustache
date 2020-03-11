@@ -1,0 +1,23 @@
+<div class="t-dashboard">
+  {{> organisms-merchant-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        {{> organisms-section-header(title: "Transactions")}}
+
+        <div class="m-toolbar">
+          <div>
+            <button class="a-btn-pill">New transaction</button>
+          </div>
+        </div>
+
+        <div class="m-empty-slate-cta">
+          <p>You don't have any transaction yet.</p> 
+          <p><a href="#" class="a-link" >Create your first one</a>.</p> 
+        </div>
+
+    </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

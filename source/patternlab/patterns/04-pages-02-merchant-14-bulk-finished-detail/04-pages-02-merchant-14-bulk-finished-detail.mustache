@@ -1,0 +1,91 @@
+<div class="t-dashboard">
+  {{> organisms-merchant-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        {{> organisms-section-header(title: "Details for bulk bk-8398hl12i2kh") }}
+
+        <div class="m-toolbar">
+          <div>
+            <p>Reference: ref-mybulk</p> 
+          </div>
+
+          <div>
+            <button class="a-btn-pill">View raw</button>
+            <button class="a-btn-pill">Download</button>
+          </div>
+        </div>
+
+        <div class="o-tile-row">
+          <div class="m-tile" title="">
+            <div class="m-tile__content">
+              <span class="a-text positive">Success</span>
+            </div>
+
+            <div class="m-tile__title">
+              Status
+            </div>
+
+            <div class="m-tile__subcontent">
+              <span class="a-number">2018-01-08 22:40</span>
+            </div>
+          </div>
+
+          <div class="m-tile m-tile--interactive" title="">
+            <div class="m-tile__content">
+              <span class="a-number">3</span>
+            </div>
+
+            <div class="m-tile__title">
+              Ordered transactions
+            </div>
+
+            <div class="m-tile__subcontent">
+              <span class="a-number">13.29€</span>
+            </div>
+          </div>
+
+          <div class="m-tile m-tile--interactive" title="">
+            <div class="m-tile__content">
+              <span class="a-number">3</span>
+            </div>
+
+            <div class="m-tile__title">
+              Executed transactions
+            </div>
+
+            <div class="m-tile__subcontent">
+              <span class="a-number">13.29€</span>
+            </div>
+          </div>
+
+          <div class="m-tile m-tile--interactive" title="">
+            <div class="m-tile__content">
+              <span class="a-number">0</span>
+            </div>
+
+            <div class="m-tile__title">
+              Invalid transactions
+            </div>
+
+            <div class="m-tile__subcontent">
+              <span class="a-number">0.00€</span>
+            </div>
+          </div>
+        </div>
+        
+        <table class="m-table m-table--full-width">
+            {{> molecules-bulk-finished-detail-table-header }}
+
+            <tbody>
+              {{> molecules-bulk-finished-detail-table-row }}
+              {{> molecules-bulk-finished-detail-table-row }}
+              {{> molecules-bulk-finished-detail-table-row }}
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

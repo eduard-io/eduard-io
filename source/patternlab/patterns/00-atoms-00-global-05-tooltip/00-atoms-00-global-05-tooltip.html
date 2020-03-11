@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Nullizzle shizznit velizzle, hizzle, suscipit own yo&#39;, gravida vizzle, arcu.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/main.css?1521455689855" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1521455689855" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1521455689855" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1521455689855" media="all" />
+
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="">
+    
+<div class="w-100 tc pa5">
+  <p>Data attribute only <a href="#" data-tooltip="I’m the tooltip text">Tooltip</a></p>
+  <p><code>.tooltip</code> <a href="#" class="a-tooltip" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-top</code> <a href="#" class="a-tooltip--top" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-right</code> <a href="#" class="a-tooltip--right" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-bottom</code> <a href="#" class="a-tooltip--bottom" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-left</code><a href="#" class="a-tooltip--left" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+</div>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Any tag can have a tooltip, you only need to add a <code>data-tooltip</code> attribute to the HTML node to get it to work.</p>\n<p>To get more control on the tooltip you cann add the <code>.a-tooltip</code> class and some of its modifiers to set the tooltip position:</p>\n<ul>\n<li><code>.a-tooltip--top</code></li>\n<li><code>.a-tooltip--right</code></li>\n<li><code>.a-tooltip--bottom</code></li>\n<li><code>.a-tooltip--left</code></li>\n</ul>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Tooltip","patternPartial":"atoms-tooltip","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1521455689855">
+  (function() {
+    if (self != top) {
+      var cb = '1521455689855';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1521455689855">
+  (function() {
+    if (self != top) {
+      var cb = '1521455689855';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

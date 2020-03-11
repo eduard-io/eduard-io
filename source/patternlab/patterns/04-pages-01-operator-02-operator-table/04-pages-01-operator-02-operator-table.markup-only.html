@@ -1,0 +1,254 @@
+<div class="t-dashboard">
+  <div class="o-header__wrapper o-header__wrapper--dashboard">
+    <nav class="o-header">
+        <div class="o-header__left">
+            <a class="o-header__operator-avatar">
+                <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;200&#x2F;200&#x2F;people" alt="Avatar" class="a-avatar--small" />
+            </a>
+
+            <a class="o-header__user-avatar">
+                <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;200&#x2F;200&#x2F;people" alt="Avatar" class="a-avatar--profile-link" />
+            </a>
+        </div>
+        
+        <div class="o-header__center">
+            <div class="m-search">
+    <form class="m-search__form">
+        <input placeholder="Search" class="m-search__input">
+        <button class="m-search__submit" disabled="disabled">
+          <img src="/images/icons/magnifying-glass.svg" height="16">
+        </button>
+    </form>
+</div>
+        </div>
+        
+        <div class="o-header__right">
+            <ul class="m-header-nav">
+  <li class="m-header-nav__item">
+    <a class="a-nav-link a-nav-link--active">Traffic</a>
+  </li>
+
+  <li class="m-header-nav__item">
+    <a class="a-nav-link">Transactions</a>
+  </li>
+
+  <li class="m-header-nav__item">
+    <a class="a-nav-link">FTC</a>
+  </li>
+</ul>
+        </div>
+    </nav>
+</div>
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        <header class="o-section-header">
+  <h1 class="a-header">Transactions</h1>
+
+<div class="m-range-selector">
+  <div class="dropdown">
+    <div class="dropdown--button-container">
+      <input readonly="" value="2017-11-01">
+    </div>
+  </div>
+  <b>&mdash;</b>
+  <div class="dropdown">
+    <div class="dropdown--button-container">
+      <input readonly="" value="2017-11-30">
+    </div>
+  </div>
+
+  <!-- <button class="a-btn a-btn--green br0" disabled="disabled"> -->
+  <button class="m-range-selector__button">
+    Go
+  </button>
+</div></header>
+
+        <div class="o-filter">
+    <div class="o-filter__row">
+        Types:
+        
+        <ul class="m-filter-list">
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--b2b a-filter-toggle--checked--b2b">
+  Marketplace
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--b2n a-filter-toggle--checked--b2n">
+  Business to Network
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--b2p a-filter-toggle--checked--b2p">
+  Settlement
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--n2b a-filter-toggle--checked--n2b">
+  Network to Business
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--n2n a-filter-toggle--checked--n2n">
+  Conciliation
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--n2p a-filter-toggle--checked--n2p">
+  Charge
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--p2b a-filter-toggle--checked--p2b">
+  Purchase
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--p2n a-filter-toggle--checked--p2n">
+  Deposit
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--p2p_onnet a-filter-toggle--checked--p2p_onnet">
+  Exchange On Net
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--p2p_offnetin a-filter-toggle--checked--p2p_offnetin">
+  Exchange In
+</a>
+    </li>
+    <li class="m-filter-list__item">
+        <a class="a-filter-toggle a-filter-toggle--p2p_offnetout a-filter-toggle--checked--p2p_offnetout">
+  Exchange Out
+</a>
+    </li>
+</ul>
+    </div>
+
+    <div class="o-filter__row">
+        Status:
+        
+        <ul class="m-filter-list">
+            <li class="m-filter-list__item">
+                <a class="a-filter-toggle a-filter-toggle--authorized a-filter-toggle--checked--authorized">
+  Completed
+</a>
+            </li>
+            <li class="m-filter-list__item">
+                <a class="a-filter-toggle a-filter-toggle--created a-filter-toggle--checked--created">
+  Pending
+</a>
+            </li>
+            <li class="m-filter-list__item">
+                <a class="a-filter-toggle a-filter-toggle--failed a-filter-toggle--checked--failed">
+  Failed
+</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+        <table class="m-table m-table--full-width">
+    <thead class="m-table__header">
+        <tr>
+            <th class="m-table__cell m-table__cell--text">Date</th>
+            <th class="m-table__cell m-table__cell--text">Id</th>
+            <th class="m-table__cell m-table__cell--text">Type</th>
+            <th class="m-table__cell m-table__cell--text">From</th>
+            <th class="m-table__cell m-table__cell--text">To</th>
+            <th class="m-table__cell m-table__cell--text">Status</th>
+            <th class="m-table__cell m-table__cell--number">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="m-table__row">
+            <td class="m-table__cell m-table__cell--text">2017-12-04 18:56</td>
+            <td class="m-table__cell m-table__cell--text">tr-sq6kimbt0n63</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="sort p2p_offnetin">Exchange (P2P-in)</span>
+            </td>
+            <td class="m-table__cell m-table__cell--text">+34656445653</td>
+            <td class="m-table__cell m-table__cell--text">account-2</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="status authorized">Completed</span>
+            </td>
+            <td class="m-table__cell m-table__cell--number">
+                <span class="a-trade-value a-trade-value--authorized">
+                    <span class="cw-value--no-color">1 € </span>
+                </span>
+            </td>
+        </tr>
+        <tr class="m-table__row">
+            <td class="m-table__cell m-table__cell--text">2017-11-29 18:33</td>
+            <td class="m-table__cell m-table__cell--text">tr-800gahi46su2</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="sort p2b">Purchase (P2B)</span>
+            </td>
+            <td class="m-table__cell m-table__cell--text">+34691363380</td>
+            <td class="m-table__cell m-table__cell--text">Muving</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="status failed">Failed</span>
+            </td>
+            <td class="m-table__cell m-table__cell--number">
+                <span class="a-trade-value a-trade-value--failed">
+                    <span class="cw-value--no-color">8 €</span>
+                </span>
+            </td>
+        </tr>
+        <tr class="m-table__row">
+            <td class="m-table__cell m-table__cell--text">2017-11-29 18:33</td>
+            <td class="m-table__cell m-table__cell--text">tr-hdst1dj5no2m</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="sort n2p">Charge (N2P)</span>
+            </td>
+            <td class="m-table__cell m-table__cell--text">Movistar</td>
+            <td class="m-table__cell m-table__cell--text">+34691363380</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="status authorized">Completed</span>
+            </td>
+            <td class="m-table__cell m-table__cell--number">
+                <span class="a-trade-value a-trade-value--authorized">
+                    <span class="cw-value--no-color">8 €</span></span>
+            </td>
+        </tr>
+        <tr class="m-table__row">
+            <td class="m-table__cell m-table__cell--text">2017-11-29 18:33</td>
+            <td class="m-table__cell m-table__cell--text">tr-fsepbsikfaj9</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="sort p2b">Purchase (P2B)</span>
+            </td>
+            <td class="m-table__cell m-table__cell--text">+34691363380</td>
+            <td class="m-table__cell m-table__cell--text">Muving</td>
+            <td class="m-table__cell m-table__cell--text">
+                <span class="status authorized">Completed</span>
+            </td>
+            <td class="m-table__cell m-table__cell--number">
+                <span class="a-trade-value a-trade-value--authorized">
+                    <span class="cw-value--no-color">8 €</span>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+  </div>
+
+  <nav class="o-footer">
+    <img class="o-footer__logo" src="/images/logo/grey.svg" height="16">
+    <p class="o-footer__slogan">Airtime is the new cash</p>
+    <p class="o-footer__copyright-notice">© 2017 COOWRY LTD. All rights reserved.</p>
+    <ul class="o-footer__link-list">
+        <li class="o-footer__link-list-item"><a class="o-footer__link" href="http://coowry.com/terms">Terms and Conditions</a>
+        </li>
+        <li class="o-footer__link-list-item"><a class="o-footer__link" href="http://coowry.com/privacy">Privacy</a>
+        </li>
+        <li class="o-footer__link-list-item"><a class="o-footer__link" href="http://coowry.com/faqs">FAQs</a>
+        </li>
+        <li class="o-footer__link-list-item"><a class="o-footer__link" href="http://coowry.com/contact_us">Contact</a>
+        </li>
+    </ul>
+</nav>
+</div>

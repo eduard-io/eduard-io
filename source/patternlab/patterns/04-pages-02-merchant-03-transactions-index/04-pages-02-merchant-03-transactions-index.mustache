@@ -1,0 +1,27 @@
+<div class="t-dashboard">
+  {{> organisms-merchant-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        
+        {{> organisms-section-header(title: "Transactions")}}
+
+        {{> molecules-transactions-toolbar}}
+
+        <table class="m-table m-table--full-width">
+            {{> molecules-transactions-table-header}}
+
+            <tbody>
+              {{> molecules-transactions-table-row}}
+              {{> molecules-transactions-table-row}}
+              {{> molecules-transactions-table-row}}
+              {{> molecules-transactions-table-row}}
+              {{> molecules-transactions-table-row}}
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

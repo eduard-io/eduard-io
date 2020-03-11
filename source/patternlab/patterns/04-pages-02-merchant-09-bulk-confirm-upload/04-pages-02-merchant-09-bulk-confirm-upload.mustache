@@ -1,0 +1,28 @@
+<!-- it works over another template -->
+{{> pages-bulk-view }}
+
+<div class="t-modal">
+
+  <div class="t-modal__content">
+      <a href="#" class="t-modal__close a-link a-link--modal">
+        <i class="fa fa-times fa-fw"></i>
+      </a>
+      
+      <h3>Confirm transactions from upload</h3>
+
+      <table class="m-table m-table--full-width">
+        
+
+        {{> molecules-bulk-upload-verification-table-header }}
+
+        <tbody>
+          {{> molecules-bulk-upload-verification-table-row-valid }}
+          {{> molecules-bulk-upload-verification-table-row-invalid }}
+        </tbody>
+      </table>
+
+      <button class="a-btn-primary">Upload</button>
+      <button class="a-btn-secondary">Cancel</button>
+  </div>
+
+</div>

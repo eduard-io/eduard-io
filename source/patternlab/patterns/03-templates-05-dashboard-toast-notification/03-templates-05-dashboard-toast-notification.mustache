@@ -1,0 +1,19 @@
+<div class="t-dashboard">
+  {{> organisms-operator-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    
+    <div class="t-dashboard__content">
+
+      <!-- START OF YOUR TOAST -->
+        {{> molecules-toast-default:m-toast--alert(content: "Your toast goes here.") }}
+      <!-- END OF YOUR TOAST -->
+      
+        <p class="tc">HERE GOES THE CONTENT</p>
+      
+    </div>
+  
+  </div>
+
+  {{> organisms-footer }}
+</div>

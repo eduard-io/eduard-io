@@ -1,0 +1,24 @@
+<div class="t-dashboard">
+  {{> organisms-merchant-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        {{> organisms-section-header(title: "New bulk")}}
+
+        {{> molecules-bulk-detail-toolbar }}
+        
+        <table class="m-table m-table--full-width">
+            {{> molecules-bulk-detail-table-header }}
+
+            <tbody>
+              {{> molecules-bulk-detail-table-row }}
+              {{> molecules-bulk-detail-table-row }}
+              {{> molecules-bulk-detail-table-row }}
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

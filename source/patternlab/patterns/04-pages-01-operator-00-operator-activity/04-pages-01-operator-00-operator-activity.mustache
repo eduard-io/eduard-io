@@ -1,0 +1,24 @@
+<div class="t-dashboard">
+  {{> organisms-operator-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        {{> organisms-section-header-range-selector-closed(title: "Activity")}}
+        
+        {{> organisms-tile-row}}
+        {{> organisms-tile-row}}
+
+        <h2 class="a-section-title">Exchange</h2>
+        {{> organisms-tile-row}}
+        {{> organisms-tile-row}}
+
+        <h2 class="a-section-title">Miscellaneous</h2>
+        {{> organisms-tile-row}}
+
+        <h2 class="a-section-title">Balance fluctuation</h2>
+        {{> organisms-tile-row}}
+      </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

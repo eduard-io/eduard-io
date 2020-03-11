@@ -1,0 +1,15 @@
+<div class="t-dashboard">
+  {{> organisms-operator-header }}
+
+  <div class="t-dashboard__content-wrapper t-dashboard__content-wrapper--top">
+    <div class="t-dashboard__content">
+        {{> organisms-section-header-range-selector-closed(title: "Transactions")}}
+
+        {{> organisms-filter }}
+        
+        {{> organisms-table }}
+      </div>
+  </div>
+
+  {{> organisms-footer }}
+</div>

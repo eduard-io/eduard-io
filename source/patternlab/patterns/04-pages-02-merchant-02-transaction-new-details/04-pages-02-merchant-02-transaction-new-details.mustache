@@ -1,0 +1,24 @@
+<!-- it works over another template -->
+{{> pages-transactions-index-empty }}
+
+<div class="t-modal">
+
+  <div class="t-modal__content">
+      <a href="#" class="t-modal__close a-link a-link--modal">
+        <i class="fa fa-times fa-fw"></i>
+      </a>
+      
+      {{> molecules-double-avatar }}
+
+      <h2 class="a-section-title tc">New transaction with (+34) 634 84 43 93</h2>
+
+      {{> molecules-value-input }}
+
+      <input class="a-input--large" id="text" type="text" placeholder="Description">
+      
+      <input class="a-input--large" id="text" type="text" placeholder="Reference">
+
+      {{> molecules-double-buttons-solid(first: "Request", second: "Send")}}
+  </div>
+
+</div>
