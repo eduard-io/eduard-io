@@ -24,6 +24,8 @@ a {
 
   &:hover {
     text-decoration: underline;
+    transition: opacity .15s ease-in;
+    opacity: .8;
   }
 }
 
@@ -37,17 +39,11 @@ li {
 }
 
 // Typography, including headers
-p {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 h1 {
-  font-size: 1.25rem; // 20px
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
+  font-size: 1.75rem; // 28px
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -55,5 +51,4 @@ h2 {
   font-weight: 700;
   line-height: 1rem;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
