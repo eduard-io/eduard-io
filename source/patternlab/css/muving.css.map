@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "muving.css",
-	"sources": [
-		"../../source/css/muving.scss"
-	],
-	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,MAAM,GACd"
-}
