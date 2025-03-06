@@ -26,6 +26,11 @@ h1 {
   font-weight: var(--font-weight-semibold)
 }
 
+h1 + p {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+}
+
 p {
   font-size: 1.125rem;
   line-height: 1.333rem;
@@ -44,8 +49,9 @@ a:hover {
   min-height: 100vh; /* Or use height: 100vh; if you always want full-screen */
   width: 100vw;
   display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
+  /*justify-content: center; /* horizontal centering */
+  /*align-items: center;     /* vertical centering */
+  margin-top: 20vh;
   background-color: var(--color-background);
 }
 
@@ -54,9 +60,12 @@ a:hover {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
+  
+  padding: 2rem;
+
+  margin: 0 auto;
 }
 
 .link-list {
