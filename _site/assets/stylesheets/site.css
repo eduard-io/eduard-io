@@ -1,190 +1,93 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+:root {
+  --color-background: #F6F6F6;
+  --color-text: #555;
+  --color-link: #2F80ED;
+  
+  /* --font-family-serif: 'Times New Roman', Times, serif;
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  --font-family-serif: 'Source Serif 4', 'Times New Roman', Times, serif;
+  --font-family-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+}
 
 html {
-  font-size: 16px;
-  background-color: #FCF5AC;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
 
-::-moz-selection {
-  background: #FCF5AC; }
-
-::selection {
-  background: #FCF5AC; }
-
-body {
-  background-color: #FDFDFD;
-  color: #333;
-  font-family: "EuclidCircularA", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-  margin: 0;
-  min-height: 100vh; }
-
-a {
-  color: #FE712E;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline;
-    -webkit-transition: opacity .15s ease-in;
-    transition: opacity .15s ease-in;
-    opacity: .8; }
-
-ul {
-  list-style-type: square;
-  list-style-position: inside; }
-
-li {
-  margin-bottom: 0.5rem; }
+  font-size: 16px; /* To use with REMs (Root EMs) */
+  font-family: var(--font-family-serif);
+  color: var(--color-text);
+}
 
 h1 {
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 2.5rem; }
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold)
+}
 
-h2 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1rem;
-  margin-bottom: 1rem; }
+p {
+  font-size: 1.125rem;
+  line-height: 1.333rem;
+}
 
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../typefaces/EuclidCircularA-Regular-WebS.eot") format("eot"), url("../typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2"), url("../typefaces/EuclidCircularA-Regular-WebS.woff") format("woff"); }
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
 
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../typefaces/EuclidCircularA-RegularItalic-WebS.eot") format("eot"), url("../typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2"), url("../typefaces/EuclidCircularA-RegularItalic-WebS.woff") format("woff"); }
+a:hover {
+  text-decoration: underline;
+}
 
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../typefaces/EuclidCircularA-Medium-WebS.eot") format("eot"), url("../typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2"), url("../typefaces/EuclidCircularA-Medium-WebS.woff") format("woff"); }
+.home {
+  min-height: 100vh; /* Or use height: 100vh; if you always want full-screen */
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  background-color: var(--color-background);
+}
 
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../typefaces/EuclidCircularA-MediumItalic-WebS.eot") format("eot"), url("../typefaces/EuclidCircularA-MediumItalic-WebS.woff2") format("woff2"), url("../typefaces/EuclidCircularA-MediumItalic-WebS.woff") format("woff"); }
+.home main {
+  max-width: 64ch; /* Keeps line length ideal */
 
-.o-container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 0.5rem #FE712E;
-  padding: 2.5rem;
-  margin: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
 
-.c-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 0.875rem; }
-  .c-footer__firmitas {
-    font-style: italic; }
+.link-list {
+  /* Remove default list styling and spacing */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-@media only screen and (max-width: 600px) {
-  .c-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center; } }
+  /* Make the list items flow side by side */
+  display: inline-flex; 
+  /* or `display: flex;` and optionally add gap: */
+  /* gap: 1rem; */
 
-.c-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  size: 1rem; }
-  .c-header__right {
-    text-align: right; }
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+}
 
-@media only screen and (max-width: 600px) {
-  .c-header {
-    display: none; } }
+.link-list li {
+  /* Remove default bullet by turning off list-style in the LI itself as well */
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular)
+}
 
-.c-main {
-  max-width: 45rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem; }
-  .c-main__logo {
-    width: 156px;
-    margin-bottom: 3rem; }
-  .c-main__title {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 2.5rem; }
-  .c-main__p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 2rem; }
-  .c-main__cta {
-    display: inline-block;
-    background-color: #FE712E;
-    color: #fff;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2rem; }
-    .c-main__cta:hover {
-      text-decoration: none;
-      -webkit-transition: opacity .15s ease-in;
-      transition: opacity .15s ease-in;
-      opacity: .8; }
+/* 
+  Add a “•” separator *after* each list item,
+  except for the very last one
+*/
+.link-list li:not(:last-child)::after {
+  content: "•"; 
+  margin: 0 0.5rem;
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+}
