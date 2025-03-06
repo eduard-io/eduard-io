@@ -51,7 +51,7 @@ a:hover {
   display: flex;
   /*justify-content: center; /* horizontal centering */
   /*align-items: center;     /* vertical centering */
-  margin-top: 20vh;
+  padding-top: 20vh;
   background-color: var(--color-background);
 }
 
