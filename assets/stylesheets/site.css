@@ -1,6 +1,7 @@
 :root {
   --color-background: #F6F6F6;
   --color-text: #555;
+  --color-text-secondary: #666;
   --color-link: #2F80ED;
   
   /* --font-family-serif: 'Times New Roman', Times, serif;
@@ -8,6 +9,7 @@
 
   --font-family-serif: 'Source Serif 4', 'Times New Roman', Times, serif;
   --font-family-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-regular: 400;
 }
@@ -22,18 +24,20 @@ html {
 }
 
 h1 {
-  font-size: 1.25rem;
-  font-weight: var(--font-weight-semibold)
+  font-size: 1.40rem;
+  font-weight: var(--font-weight-bold)
 }
 
 h1 + p {
   font-family: var(--font-family-sans);
-  font-size: 1rem;
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
 }
 
 p {
   font-size: 1.125rem;
-  line-height: 1.4;
+  line-height: 1.5rem;
 }
 
 a {
