@@ -25,19 +25,20 @@ html {
 
 h1 {
   font-size: 1.40rem;
-  font-weight: var(--font-weight-bold)
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
 }
 
 h1 + p {
   font-family: var(--font-family-sans);
-  font-size: 0.90rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--color-text-secondary);
 }
 
 p {
   font-size: 1.125rem;
-  line-height: 1.5rem;
+  line-height: 1.6;
 }
 
 a {
@@ -47,6 +48,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+em {
+  font-style: italic;
 }
 
 .home {
