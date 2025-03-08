@@ -1,8 +1,15 @@
 :root {
+  /* Light theme (default) */
   --color-background: #FDFDFD;
   --color-text: #444;
   --color-text-secondary: #666;
   --color-link: #205EEF;
+
+  /* Dark theme colors - will be applied via media query or class */
+  --color-background-dark: #1A1A1A;
+  --color-text-dark: #E6E6E6;
+  --color-text-secondary-dark: #A3A3A3;
+  --color-link-dark: #7AA2FF;
   
   /* --font-family-serif: 'Times New Roman', Times, serif;
   --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
@@ -12,6 +19,24 @@
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-regular: 400;
+}
+
+/* Dark mode via class */
+:root.dark {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-secondary: var(--color-text-secondary-dark);
+  --color-link: var(--color-link-dark);
+}
+
+/* Dark mode via system preference (only if no class is set) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not(.dark) {
+    --color-background: var(--color-background-dark);
+    --color-text: var(--color-text-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
+    --color-link: var(--color-link-dark);
+  }
 }
 
 html {
@@ -112,7 +137,7 @@ em {
 }
 
 /* 
-  Add a “•” separator *after* each list item,
+  Add a "•" separator *after* each list item,
   except for the very last one
 */
 .link-list li:not(:last-child)::after {
@@ -120,4 +145,27 @@ em {
   margin: 0 0.5rem;
   color: var(--color-text);
   font-weight: var(--font-weight-semibold);
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-text);
+}
+
+.theme-toggle svg {
+  width: 1.5rem;
+  height: 1.5em;
+  fill:  var(--color-text);
 }
