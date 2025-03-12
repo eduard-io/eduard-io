@@ -168,4 +168,14 @@ em {
   width: 1.5rem;
   height: 1.5em;
   fill:  var(--color-text-secondary);
+}}
+
+
+.intro {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
+
