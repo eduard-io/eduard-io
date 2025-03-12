@@ -7,9 +7,9 @@ export default function(eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("assets/typefaces"); // Ensure images are copied to _site
 
   
-    /*return {
-      markdownTemplateEngine: "njk",
-      htmlTemplateEngine: "njk",
-      templateFormats: ["njk", "md", "html"]
-    }*/
+    return {
+       markdownTemplateEngine: "njk",
+       htmlTemplateEngine: "njk",
+       templateFormats: ["njk", "md", "html"]
+    }
   };
