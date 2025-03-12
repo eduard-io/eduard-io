@@ -2,22 +2,27 @@
   /* Light theme (default) */
   --color-background: #FDFDFD;
   --color-text: #444;
+  --color-text-title: #000;
   --color-text-secondary: #666;
   --color-link: #205EEF;
+  --color-divider: #DDD;
 
   /* Dark theme colors - will be applied via media query or class */
   --color-background-dark: #1A1A1A;
-  --color-text-dark: #E6E6E6;
-  --color-text-secondary-dark: #A3A3A3;
+  --color-text-dark: #CCC;
+  --color-text-title-dark: #EEE;
+  --color-text-secondary-dark: #999;
   --color-link-dark: #7AA2FF;
+  --color-divider-dark: #444;
   
   /* --font-family-serif: 'Times New Roman', Times, serif;
   --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 
-  --font-family-serif: 'Source Serif 4', 'Times New Roman', Times, serif;
-  --font-family-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-family-serif: 'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; /*'Source Serif 4', 'Times New Roman', Times, serif*/;
+  --font-family-sans: 'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;/*'Inter', 'Helvetica Neue', sans-serif;*/
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
+  --font-weight-medium: 500;
   --font-weight-regular: 400;
 }
 
@@ -25,8 +30,10 @@
 :root.dark {
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
+  --color-text-title: var(--color-text-title-dark);
   --color-text-secondary: var(--color-text-secondary-dark);
   --color-link: var(--color-link-dark);
+  --color-divider: var(--color-divider-dark);
 }
 
 /* Dark mode via system preference (only if no class is set) */
@@ -34,10 +41,58 @@
   :root:not(.light):not(.dark) {
     --color-background: var(--color-background-dark);
     --color-text: var(--color-text-dark);
+    --color-text-title: var(--color-text-title-dark);
     --color-text-secondary: var(--color-text-secondary-dark);
     --color-link: var(--color-link-dark);
+    --color-divider: var(--color-divider-dark);
   }
 }
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.eot") format("eot"),
+       url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2"),
+       url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff") format("woff");
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.eot") format("eot"),
+       url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2"),
+       url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/typefaces/EuclidCircularA-Medium-WebS.eot") format("eot"),
+       url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2"),
+       url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff") format("woff");
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.eot") format("eot"),
+       url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff2") format("woff2"),
+       url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff") format("woff");
+}
+
+
+
+
+
+
+
+
 
 html {
   -moz-osx-font-smoothing: grayscale;
@@ -52,6 +107,7 @@ h1 {
   font-size: 1.40rem;
   font-weight: var(--font-weight-bold);
   line-height: 1;
+  color: var(--color-text-title);
 }
 
 h1 + p {
@@ -59,6 +115,12 @@ h1 + p {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--color-text-secondary);
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-title);
 }
 
 p {
@@ -168,7 +230,7 @@ em {
   width: 1.5rem;
   height: 1.5em;
   fill:  var(--color-text-secondary);
-}}
+}
 
 
 .intro {
