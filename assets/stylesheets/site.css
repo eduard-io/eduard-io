@@ -369,3 +369,42 @@ h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
     fill var(--transition-duration) var(--transition-easing),
     background-color var(--transition-duration) var(--transition-easing);
 }
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for elements to be animated */
+.initial-load {
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Stagger the animations for each element */
+.initial-load:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.initial-load:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.initial-load:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.initial-load:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.initial-load:nth-child(5) {
+    animation-delay: 0.9s;
+}
