@@ -24,6 +24,10 @@
   --font-weight-semibold: 600;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
+
+  /* Add transition properties for color changes */
+  --transition-duration: 200ms;
+  --transition-easing: ease;
 }
 
 /* Dark mode via class */
@@ -151,6 +155,13 @@ html {
   font-size: 16px; /* To use with REMs (Root EMs) */
   font-family: var(--font-family-serif);
   color: var(--color-text);
+  
+  /* Add smooth transitions */
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+body {
+  transition: background-color var(--transition-duration) var(--transition-easing);
 }
 
 h1 {
@@ -318,6 +329,7 @@ em {
 .job {
   border-bottom: 1px solid var(--color-divider);
   padding: 2rem 0;
+  transition: border-color var(--transition-duration) var(--transition-easing);
 }
 
 .job:last-child {
@@ -331,6 +343,10 @@ em {
 
 .job h2 a {
   color: var(--color-text-title);
+  transition: 
+    color var(--transition-duration) var(--transition-easing),
+    fill var(--transition-duration) var(--transition-easing),
+    background-color var(--transition-duration) var(--transition-easing);
 }
 
 .dates {
@@ -341,4 +357,15 @@ em {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--color-text-secondary);
+  transition: 
+    color var(--transition-duration) var(--transition-easing),
+    background-color var(--transition-duration) var(--transition-easing);
+}
+
+/* Add transitions to other elements that change color */
+h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
+  transition: 
+    color var(--transition-duration) var(--transition-easing),
+    fill var(--transition-duration) var(--transition-easing),
+    background-color var(--transition-duration) var(--transition-easing);
 }
