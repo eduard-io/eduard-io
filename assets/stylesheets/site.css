@@ -48,43 +48,90 @@
   }
 }
 
+
+
+
+
 @font-face {
   font-family: 'EuclidCircularA';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.eot") format("eot"),
-       url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2"),
-       url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff") format("woff");
-}
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.eot") format("eot"),
-       url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2"),
-       url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-Light-WebS.woff2") format("woff2");
 }
 
 @font-face {
   font-family: 'EuclidCircularA';
-  font-style:  normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/typefaces/EuclidCircularA-Medium-WebS.eot") format("eot"),
-       url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2"),
-       url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-LightItalic-WebS.woff2") format("woff2");
 }
+
 @font-face {
   font-family: 'EuclidCircularA';
-  font-style:  italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.eot") format("eot"),
-       url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff2") format("woff2"),
-       url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 500;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-Semibold-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 600;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-SemiboldItalic-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-Bold-WebS.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("/assets/typefaces/EuclidCircularA-BoldItalic-WebS.woff2") format("woff2");
+}
+
 
 
 
@@ -241,3 +288,39 @@ em {
   gap: 1.5rem;
 }
 
+.experience {
+  margin: 0 auto;
+}
+
+.experience h2 {
+  /* font-size: 1.8rem;
+  margin-bottom: 1rem; */
+}
+
+.job {
+  border-bottom: 1px solid var(--color-divider);
+  padding: 2rem 0;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job h2 {
+  /* font-size: 1.3rem;*/
+  margin-bottom: 0.2rem;
+}
+
+.job h2 a {
+  color: var(--color-text-title);
+}
+
+.dates {
+  /* font-size: 0.9rem;
+  color: #888;*/
+  margin-bottom: 0.2rem;
+  font-family: var(--font-family-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
