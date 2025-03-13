@@ -1,8 +1,8 @@
 :root {
   /* Light theme (default) */
-  --color-background: #FDFDFD;
+  --color-background: #F9F9F9;
   --color-text: #444;
-  --color-text-title: #000;
+  --color-text-title: #222;
   --color-text-secondary: #666;
   --color-link: #205EEF;
   --color-divider: #DDD;
@@ -52,6 +52,7 @@
 
 
 
+/* NO IN USE
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: normal;
@@ -66,7 +67,7 @@
   font-weight: 300;
   font-display: block;
   src: url("/assets/typefaces/EuclidCircularA-LightItalic-WebS.woff2") format("woff2");
-}
+} */
 
 @font-face {
   font-family: 'EuclidCircularA';
@@ -76,13 +77,14 @@
   src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2");
 }
 
+/* NOT IN USE
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: italic;
   font-weight: 400;
   font-display: block;
   src: url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2");
-}
+} 
 
 @font-face {
   font-family: 'EuclidCircularA';
@@ -115,7 +117,7 @@
   font-display: block;
   src: url("/assets/typefaces/EuclidCircularA-SemiboldItalic-WebS.woff2") format("woff2");
 }
-
+*/
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: normal;
@@ -124,6 +126,7 @@
   src: url("/assets/typefaces/EuclidCircularA-Bold-WebS.woff2") format("woff2");
 }
 
+/* NOT IN USE
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: italic;
@@ -131,7 +134,7 @@
   font-display: block;
   src: url("/assets/typefaces/EuclidCircularA-BoldItalic-WebS.woff2") format("woff2");
 }
-
+*/
 
 
 
