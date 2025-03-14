@@ -6,6 +6,10 @@ export default function(eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("assets/stylesheets"); // Ensure images are copied to _site
     // eleventyConfig.addPassthroughCopy("assets/typefaces"); // Ensure images are copied to _site
 
+    // Pass environment variables to templates
+    eleventyConfig.addGlobalData("env", {
+       CONTEXT: process.env.CONTEXT || "development"
+   });
   
     return {
        markdownTemplateEngine: "njk",
