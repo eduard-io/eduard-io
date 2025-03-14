@@ -99,6 +99,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Add transitions to other elements that change color */
+h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
+  transition: 
+    color var(--transition-duration) var(--transition-easing),
+    fill var(--transition-duration) var(--transition-easing),
+    background-color var(--transition-duration) var(--transition-easing);
+}
+
 /* Typography */
 h1 {
   font-size: 1.25rem;
@@ -235,6 +243,18 @@ a:focus-visible {
   margin-bottom: 0.4rem;
 }
 
+.job h2 a {
+  color: var(--color-text-title);
+}
+
+.job h2 a:hover {
+  color: var(--color-link);
+}
+
+.job h2 a:focus {
+  color: var(--color-background);
+}
+
 .role:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -246,6 +266,23 @@ p.dates {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--color-text-secondary);
+}
+
+/* Back to top */
+.back-to-top {
+  display: block;
+  margin: 4rem auto 0;
+  text-align: center;
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.back-to-top:hover {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 /* ==========================================================================
