@@ -198,6 +198,27 @@ a:focus-visible {
   cursor: pointer;
 }
 
+.theme-toggle:hover {
+  border-color: var(--color-text);
+}
+
+.theme-toggle:focus-visible {
+  outline-offset: 2px;
+  border-color: var(--color-link);
+  background-color: var(--color-link);
+  border-radius: 4px;
+}
+
+.theme-toggle:focus-visible svg {
+  fill: var(--color-background);
+}
+
+.theme-toggle svg {
+  width: 1.5rem;
+  height: 1.5em;
+  fill:  var(--color-text-secondary);
+}
+
 /* Job Section */
 .job {
   border-bottom: 1px solid var(--color-divider);
