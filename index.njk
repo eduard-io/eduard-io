@@ -141,8 +141,26 @@
       <li><a href="https://github.com/eduard-io" target="_blank">github</a></li>
     </ul>
     
+
+    {% if flags.showExperience %}
+    <section class="experience initial-load">
+      {% for job in experience.experience %}
+        <div class="job initial-load">
+          <p class="dates">{{ job.start }} - {{ job.end or "Present" }}</p> 
+          <h2>{{ job.title }} 
+            {% if job.url %}
+              <span>at <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.company }}</a></span>
+            {% else %}
+              <span>at {{ job.company }}</span>
+            {% endif %}
+          </h2>
+          <p>{{ job.description }}</p>
+        </div>
+      {% endfor %}
     </section>
     
+    <a href="#" class="back-to-top initial-load" @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})">Back to top</a>
+    {% endif %}
   </main>
 </body>
 </html>
