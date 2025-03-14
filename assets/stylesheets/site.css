@@ -1,3 +1,6 @@
+/* ==========================================================================
+   CSS Variables & Theming
+   ========================================================================== */
 :root {
   /* Light theme (default) */
   --color-background: #F9F9F9;
@@ -7,7 +10,7 @@
   --color-link: #205EEF;
   --color-divider: #DDD;
 
-  /* Dark theme colors - will be applied via media query or class */
+  /* Dark theme colors */
   --color-background-dark: #1A1A1A;
   --color-text-dark: #CCC;
   --color-text-title-dark: #EEE;
@@ -15,30 +18,22 @@
   --color-link-dark: #7AA2FF;
   --color-divider-dark: #444;
   
-  /* --font-family-serif: 'Times New Roman', Times, serif;
-  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-
-  /* Sans-serif (system UI fonts) */
+  /* Typography */
   --font-family-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  
-  /* Serif (system UI fonts) */
   --font-family-serif: "New York", "Iowan Old Style", "Palatino", "Times New Roman", Times, serif;
   
-  /* --font-family-serif: 'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;  */
-  /*'Source Serif 4', 'Times New Roman', Times, serif*/;
-  /* --font-family-sans: 'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; */
-  /*'Inter', 'Helvetica Neue', sans-serif;*/
+  /* Font weights */
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
-  /* Add transition properties for color changes */
+  /* Transitions */
   --transition-duration: 200ms;
   --transition-easing: ease;
 }
 
-/* Dark mode via class */
+/* Dark mode themes */
 :root.dark {
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
@@ -48,7 +43,6 @@
   --color-divider: var(--color-divider-dark);
 }
 
-/* Dark mode via system preference (only if no class is set) */
 @media (prefers-color-scheme: dark) {
   :root:not(.light):not(.dark) {
     --color-background: var(--color-background-dark);
@@ -60,27 +54,9 @@
   }
 }
 
-
-
-
-
-/* NO IN USE
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 300;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-Light-WebS.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 300;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-LightItalic-WebS.woff2") format("woff2");
-} */
-
+/* ==========================================================================
+   Font Face Declarations
+   ========================================================================== */
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: normal;
@@ -88,16 +64,6 @@
   font-display: block;
   src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2");
 }
-
-/* NOT IN USE
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 400;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-RegularItalic-WebS.woff2") format("woff2");
-} 
-*/
 
 @font-face {
   font-family: 'EuclidCircularA';
@@ -107,32 +73,6 @@
   src: url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2");
 }
 
-/* NOT IN USE
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 500;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-MediumItalic-WebS.woff2") format("woff2");
-}
-
-
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 600;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-Semibold-WebS.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 600;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-SemiboldItalic-WebS.woff2") format("woff2");
-}
-*/
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: normal;
@@ -141,33 +81,15 @@
   src: url("/assets/typefaces/EuclidCircularA-Bold-WebS.woff2") format("woff2");
 }
 
-/* NOT IN USE
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: italic;
-  font-weight: 700;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-BoldItalic-WebS.woff2") format("woff2");
-}
-*/
-
-
-
-
-
-
-
-
-
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
-  font-size: 16px; /* To use with REMs (Root EMs) */
+  font-size: 16px;
   font-family: var(--font-family-serif);
   color: var(--color-text);
-  
-  /* Add smooth transitions */
   transition: color var(--transition-duration) var(--transition-easing);
 }
 
@@ -177,19 +99,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Typography */
 h1 {
-  /* font-size: 1.40rem; */
   font-size: 1.25rem;
   font-weight: var(--font-weight-medium);
   line-height: 1;
   color: var(--color-text-title);
-}
-
-h1 + p {
-  font-family: var(--font-family-sans);
-  /* font-size: 0.875rem; */
-  /* text-transform: uppercase; */
-  color: var(--color-text-secondary);
 }
 
 h2 {
@@ -200,16 +115,14 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  /* font-size: 1.125rem; */
-  /*font-weight: var(--font-weight-medium);*/
   color: var(--color-text-title);
 }
 
 p {
-  /* font-size: 1re; */
   line-height: 1.5;
 }
 
+/* Links */
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -220,77 +133,51 @@ a:hover {
 }
 
 a:focus-visible {
-  /*outline: 2px solid #0077cc;
-  outline-offset: 2px;*/
-
-  outline: 2px solid var(--color-link); /* Visible focus ring */
+  outline: 2px solid var(--color-link);
   outline-offset: 0px;
-  border-color: var(--color-link); /* Change border color on focus */
+  border-color: var(--color-link);
   background-color: var(--color-link);
   border-radius: 4px;
   color: var(--color-background);
 }
 
-em {
-  font-style: italic;
-}
-
+/* ==========================================================================
+   Layout & Components
+   ========================================================================== */
 .home {
-  min-height: 100vh; /* Or use height: 100vh; if you always want full-screen */
+  min-height: 100vh;
   width: 100vw;
   display: flex;
-  /*justify-content: center; /* horizontal centering */
-  /*align-items: center;     /* vertical centering */
   padding-top: 20vh;
   background-color: var(--color-background);
-    
-}
-
-@media (max-width: 768px) {
-  .home {
-    padding-top: 4rem;
-  }
 }
 
 .home main {
-  max-width: 55ch; /* Keeps line length ideal */
-
+  max-width: 55ch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  
   padding: 2rem;
-
   margin: 0 auto;
 }
 
+/* Link List */
 .link-list {
-  /* Remove default list styling and spacing */
   list-style: none;
   margin: 0;
   padding: 0;
-
-  /* Make the list items flow side by side */
-  display: inline-flex; 
-  /* or `display: flex;` and optionally add gap: */
-  /* gap: 1rem; */
-
+  display: inline-flex;
   font-family: var(--font-family-sans);
   font-size: 0.875rem;
 }
 
 .link-list li {
-  /* Remove default bullet by turning off list-style in the LI itself as well */
   list-style-type: none;
   text-transform: uppercase;
   font-weight: var(--font-weight-regular)
 }
 
-/* 
-  Add a "•" separator *after* each list item,
-  except for the very last one
-*/
 .link-list li:not(:last-child)::after {
   content: "•"; 
   margin: 0 0.5rem;
@@ -298,7 +185,7 @@ em {
   font-weight: var(--font-weight-semibold);
 }
 
-/* Theme toggle button styles */
+/* Theme Toggle */
 .theme-toggle {
   position: absolute;
   top: 1rem;
@@ -311,62 +198,10 @@ em {
   cursor: pointer;
 }
 
-.theme-toggle:hover {
-  border-color: var(--color-text);
-}
-
-.theme-toggle:focus-visible {
-  /*outline: 2px solid #0077cc;
-  outline-offset: 2px;*/
-
-  /*outline: 2px solid var(--color-link); /* Visible focus ring */
-  outline-offset: 2px;
-  border-color: var(--color-link); /* Change border color on focus */
-  background-color: var(--color-link);
-  border-radius: 4px;
-}
-
-.theme-toggle:focus-visible svg {
-  fill: var(--color-background);
-}
-
-.theme-toggle svg {
-  width: 1.5rem;
-  height: 1.5em;
-  fill:  var(--color-text-secondary);
-}
-
-
-/* .home {
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-} */
-
-/* 
-.intro {
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-} */
-
-.experience {
-  margin: 0 auto;
-}
-
-.experience h2 {
-  /* font-size: 1.8rem;
-  margin-bottom: 1rem; */
-}
-
+/* Job Section */
 .job {
   border-bottom: 1px solid var(--color-divider);
   padding: 2rem 0;
-  transition: border-color var(--transition-duration) var(--transition-easing);  
 }
 
 .job:last-child {
@@ -374,48 +209,11 @@ em {
 }
 
 .job h2 {
-  /* font-size: 1.3rem;*/
-  /*font-size: 1rem;*/
   font-size: 1rem;
   font-weight: var(--font-weight-medium);
   margin-bottom: 0.4rem;
-  /* font-weight: 500; */
 }
 
-.job h2 a {
-  color: var(--color-text-title);
-  /* transition: 
-    color var(--transition-duration) var(--transition-easing),
-    fill var(--transition-duration) var(--transition-easing),
-    background-color var(--transition-duration) var(--transition-easing); */
-}
-
-.job h2 a:hover {
-  /* text-decoration: none; */
-  color: var(--color-link);
-}
-
-.job h2 a:focus {
-  color: var(--color-background);
-}
-
-/* .job h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-} */
-
-.job p {
-  font-size: 1rem;
-}
-
-/* .roles {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-} */
- 
 .role:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -427,20 +225,11 @@ p.dates {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--color-text-secondary);
-  transition: 
-    color var(--transition-duration) var(--transition-easing),
-    background-color var(--transition-duration) var(--transition-easing);
 }
 
-/* Add transitions to other elements that change color */
-h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
-  transition: 
-    color var(--transition-duration) var(--transition-easing),
-    fill var(--transition-duration) var(--transition-easing),
-    background-color var(--transition-duration) var(--transition-easing);
-}
-
-/* Animation keyframes */
+/* ==========================================================================
+   Animations
+   ========================================================================== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -452,49 +241,24 @@ h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
     }
 }
 
-/* Initial state for elements to be animated */
 .initial-load {
     opacity: 0;
     animation: fadeInUp 1.2s ease-out forwards;
 }
 
-/* Stagger the animations for each element */
-.initial-load:nth-child(1) {
-    animation-delay: 0.1s;
-}
+/* Animation delays */
+.initial-load:nth-child(1) { animation-delay: 0.1s; }
+.initial-load:nth-child(2) { animation-delay: 0.3s; }
+.initial-load:nth-child(3) { animation-delay: 0.5s; }
+.initial-load:nth-child(4) { animation-delay: 0.7s; }
+.initial-load:nth-child(5) { animation-delay: 0.9s; }
+.initial-load:nth-child(6) { animation-delay: 1.1s; }
 
-.initial-load:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.initial-load:nth-child(3) {
-    animation-delay: 0.5s;
-}
-
-.initial-load:nth-child(4) {
-    animation-delay: 0.7s;
-}
-
-.initial-load:nth-child(5) {
-    animation-delay: 0.9s;
-}
-
-.initial-load:nth-child(6) {
-  animation-delay: 1.1s;
-}
-
-.back-to-top {
-  display: block;
-  margin: 4rem auto 0;
-  text-align: center;
-  font-family: var(--font-family-sans);
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  color: var(--color-text-secondary);
-  transition: color var(--transition-duration) var(--transition-easing);
-}
-
-.back-to-top:hover {
-  color: var(--color-text);
-  text-decoration: none;
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 4rem;
+  }
 }
