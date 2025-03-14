@@ -91,14 +91,14 @@ h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
 /* Typography */
 h1 {
   font-size: 1.25rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   line-height: 1;
   color: var(--color-text-title);
 }
 
 h2 {
   font-size: 1.25rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text-title);
 }
 
@@ -220,7 +220,7 @@ a:focus-visible {
 
 .job h2 {
   font-size: 1rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: 0.4rem;
 }
 
