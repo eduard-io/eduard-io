@@ -54,32 +54,6 @@
   }
 }
 
-/* ==========================================================================
-   Font Face Declarations
-   ========================================================================== */
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: var(--font-weight-regular);
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-Regular-WebS.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 500;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-Medium-WebS.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'EuclidCircularA';
-  font-style: normal;
-  font-weight: 700;
-  font-display: block;
-  src: url("/assets/typefaces/EuclidCircularA-Bold-WebS.woff2") format("woff2");
-}
 
 /* ==========================================================================
    Base Styles
@@ -92,11 +66,12 @@ html {
   color: var(--color-text);
   transition: color var(--transition-duration) var(--transition-easing);
 
-  /* playing with text display */
+  /* Enhanced typography settings */
   letter-spacing: -0.01em;
   font-kerning: normal;
-  font-variant-ligatures: common-ligatures;
-
+  font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+  font-feature-settings: "liga" 1, "dlig" 1, "hist" 1, "calt" 1, "ss01" 1;
+  text-rendering: optimizeLegibility;
 }
 
 body {
