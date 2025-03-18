@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" x-data="theme">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  
+  {% include "includes/_primary.njk" %}
+  {% include "includes/_theme.njk" %}
+  {% include "includes/_favicons.njk" %}
+  {% include "includes/_social.njk" %}
+  {% include "includes/_assets.njk" %}
+</head>
+
+<body class="home">
+  {% include "components/_theme-toggle.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+</body>
+
+</html>
