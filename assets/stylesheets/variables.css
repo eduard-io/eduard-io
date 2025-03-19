@@ -1,0 +1,56 @@
+/* ==========================================================================
+CSS Variables & Theming
+========================================================================== */
+:root {
+    /* Light theme (default) */
+    --color-background: #F9F9F9;
+    --color-text: #444;
+    --color-text-title: #000;
+    --color-text-secondary: #666;
+    --color-link: #205EEF;
+    --color-divider: #DDD;
+    
+    /* Dark theme colors */
+    --color-background-dark: #1A1A1A;
+    --color-text-dark: #CCC;
+    --color-text-title-dark: #EEE;
+    --color-text-secondary-dark: #999;
+    --color-link-dark: #7AA2FF;
+    --color-divider-dark: #444;
+    
+    /* Typography */
+    --font-family-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-serif: "New York", "Iowan Old Style", "Palatino", "Times New Roman", Times, serif;
+    
+    /* Font weights */
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    
+    /* Transitions */
+    --transition-duration: 200ms;
+    --transition-easing: ease;
+}
+
+
+/* Dark mode themes */
+:root.dark {
+    --color-background: var(--color-background-dark);
+    --color-text: var(--color-text-dark);
+    --color-text-title: var(--color-text-title-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
+    --color-link: var(--color-link-dark);
+    --color-divider: var(--color-divider-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not(.light):not(.dark) {
+        --color-background: var(--color-background-dark);
+        --color-text: var(--color-text-dark);
+        --color-text-title: var(--color-text-title-dark);
+        --color-text-secondary: var(--color-text-secondary-dark);
+        --color-link: var(--color-link-dark);
+        --color-divider: var(--color-divider-dark);
+    }
+}

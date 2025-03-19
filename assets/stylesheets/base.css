@@ -1,0 +1,76 @@
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+   html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-family: var(--font-family-serif);
+    color: var(--color-text);
+    transition: color var(--transition-duration) var(--transition-easing);
+  
+    /* Enhanced typography settings */
+    letter-spacing: -0.01em;
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+    font-feature-settings: "liga" 1, "dlig" 1, "hist" 1, "calt" 1, "ss01" 1;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    transition: background-color var(--transition-duration) var(--transition-easing);
+    font-weight: var(--font-weight-regular);
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Add transitions to other elements that change color */
+  h1, h2, a, .theme-toggle, .theme-toggle svg, .dates, .job h2 a {
+    transition: 
+      color var(--transition-duration) var(--transition-easing),
+      fill var(--transition-duration) var(--transition-easing),
+      background-color var(--transition-duration) var(--transition-easing);
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    color: var(--color-text-title);
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-title);
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: var(--color-text-title);
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Links */
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 0px;
+    border-color: var(--color-link);
+    background-color: var(--color-link);
+    border-radius: 4px;
+    color: var(--color-background);
+  }
+  

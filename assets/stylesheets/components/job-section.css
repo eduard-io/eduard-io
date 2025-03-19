@@ -1,0 +1,40 @@
+/* Job Section */
+.job {
+    border-bottom: 1px solid var(--color-divider);
+    padding: 2rem 0;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job h2 {
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 0.4rem;
+}
+
+.job h2 a {
+    color: var(--color-text-title);
+}
+
+.job h2 a:hover {
+    color: var(--color-link);
+}
+
+.job h2 a:focus {
+    color: var(--color-background);
+}
+
+.role:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+p.dates {
+    margin-bottom: 0.4rem;
+    font-family: var(--font-family-sans);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,22 @@
+/* Link List */
+.link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    font-family: var(--font-family-sans);
+    font-size: 0.875rem;
+}
+
+.link-list li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular)
+}
+
+.link-list li:not(:last-child)::after {
+    content: "•"; 
+    margin: 0 0.5rem;
+    color: var(--color-text);
+    font-weight: var(--font-weight-semibold);
+}
