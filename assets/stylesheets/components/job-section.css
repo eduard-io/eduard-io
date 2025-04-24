@@ -8,6 +8,39 @@
     border-bottom: none;
 }
 
+.job-logo {
+    width: 100%;
+    /*max-width: 200px;*/
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.light-logo {
+    display: block;
+}
+
+.dark-logo {
+    display: none;
+}
+
+:root.dark .light-logo {
+    display: none;
+}
+
+:root.dark .dark-logo {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not(.light) .light-logo {
+        display: none;
+    }
+    
+    :root:not(.light) .dark-logo {
+        display: block;
+    }
+}
+
 .job h2 {
     font-size: 1rem;
     font-weight: var(--font-weight-semibold);

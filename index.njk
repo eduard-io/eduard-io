@@ -36,6 +36,8 @@ keywords: UX designer, UI designer, product designer, user experience, user inte
 <section class="experience initial-load">
   {% for job in experience.experience %}
     <div class="job initial-load">
+      <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="job-logo light-logo">
+      <img src="{{ job.logo_dark }}" alt="{{ job.company }} logo" class="job-logo dark-logo">
       <p class="dates">{{ job.start }} - {{ job.end or "Present" }}</p> 
       <h2>{{ job.title }} 
         {% if job.url %}

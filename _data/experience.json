@@ -6,7 +6,9 @@
       "url": "https://www.gelato.com",
       "start": "2022",
       "end": "Present",
-      "description": "Leading UX across multiple business units, ensuring design consistency and a user-centered approach. Responsible for UX strategy, design systems, and scalable experiences across Gelato’s platform. Focused on scaling design operations, strengthening our design system, and fostering a high-performing team culture. Working closely with product and engineering to design seamless workflows and ensure a consistent experience across SaaS products."
+      "description": "Leading the UX team across Gelato Create and Connect, shaping strategy and ensuring consistency across web and app experiences.",
+      "logo": "/assets/images/gelato.svg",
+      "logo_dark": "/assets/images/gelato_dark.svg"
     },
     {
       "title": "Lead Product Designer",
@@ -14,7 +16,9 @@
       "url": "https://www.smartprotection.com",
       "start": "2020",
       "end": "2022",
-      "description": "Led UX and product design for Smart Protection's platform, protecting brands against online threats. Established the company's design system (Naós), improved usability across key tools, and worked hands-on with research, IA, and UX strategy."
+      "description": "  Hired and led the UX team, built the design system, and improved usability through hands-on work in research, IA, and strategy.",
+      "logo": "/assets/images/smart_protection.svg",
+      "logo_dark": "/assets/images/smart_protection_dark.svg"
     },
     {
       "title": "Head of Product & Technology",
@@ -22,29 +26,36 @@
       "url": "https://astarastore.com/",
       "start": "2019",
       "end": "2020",
-      "description": "Redesigned the automotive e-commerce experience, making it possible to buy a car or motorbike entirely online. Built digital storefronts for brands like Kia, Mitsubishi, Hyundai, and SsangYong, designing flexible systems for multi-brand dealerships."
+      "description": "Led product, tech, and design teams to launch a multi-tenant SaaS platform powering stores for Kia, Mitsubishi, Hyundai, and SsangYong in Spain and LATAM.",
+      "logo": "/assets/images/astara.svg",
+      "logo_dark": "/assets/images/astara_dark.svg"
     },
     {
       "title": "Senior Product Manager (UX)",
       "company": "Clarity AI",
       "url": "https://clarity.ai",
       "start": "2018",
-      "end": "2019",
-      "description": "Translating complex ESG data into actionable insights for investors. Led the UX effort in structuring Clarity's platform, designing information flows, and improving the way users evaluate the social and environmental impact of their investments."
+      "description": "Worked as a Product Manager leading the UX team to translate ESG data into actionable insights, structuring the platform and improving how users assess impact.",
+      "logo": "/assets/images/clarity_ai.svg",
+      "logo_dark": "/assets/images/clarity_ai_dark.svg"
     },
     {
       "title": "Digital Product Designer",
       "company": "Freelance",
       "start": "2017",
       "end": "2018",
-      "description": "Helping startups refine their product experience, define their UX strategy, and scale their design systems. Notable project: Coowry, a micropayment platform for unbanked users, where I revamped their web and mobile experience from the ground up."
+      "description": "Helped startups refine product experiences, define UX strategies, and scale design systems. Notable: Coowry, a micropayment platform for unbanked users.",
+      "logo": "/assets/images/hito.svg",
+      "logo_dark": "/assets/images/hito_dark.svg"
     },
     {
       "title": "Co-Founder & CPO/CTO",
       "company": "Emtrics",
       "start": "2011",
       "end": "2017",
-      "description": "Built one of the first emoticon-based customer feedback platforms, rethinking how businesses measure customer satisfaction. Led the design, research, and product strategy from early-stage growth to market adoption—until."
+      "description": "Co-founded and led design, product, and tech for one of the first emoticon-based customer feedback platforms.",
+      "logo": "/assets/images/emtrics.svg",
+      "logo_dark": "/assets/images/emtrics_dark.svg"
     }
   ]
 }
