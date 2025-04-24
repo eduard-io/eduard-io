@@ -1,5 +1,5 @@
 <svg width="425" height="260" viewBox="0 0 425 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="425" height="260" rx="8" fill="#181818"/>
+<rect width="425" height="260" rx="8" fill="black" fill-opacity="0.2"/>
 <g filter="url(#filter0_d_2712_208)">
 <ellipse cx="316.413" cy="130.744" rx="44.7826" ry="48.0661" fill="#98C800"/>
 <ellipse cx="316.413" cy="130.744" rx="44.7826" ry="48.0661" fill="url(#paint0_linear_2712_208)" fill-opacity="0.35" style="mix-blend-mode:darken"/>
