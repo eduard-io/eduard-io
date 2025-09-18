@@ -1,0 +1,14 @@
+{
+    "cSpell.words": [
+        "Astara",
+        "Eduard",
+        "Emtrics",
+        "Gelato",
+        "Giménez",
+        "minilab",
+        "Tuenti"
+    ],
+    "cSpell.ignoreRegExpList": [
+    "&[a-zA-Z]+;"   // matches things like &mdash; &nbsp; &copy;
+  ]
+}
