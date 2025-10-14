@@ -1,3 +1,3 @@
 export default {
-  showExperience: true
+  showExperience: true,
 };

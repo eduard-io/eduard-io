@@ -1,16 +1,16 @@
 /* Back to top */
 .back-to-top {
-    display: block;
-    margin: 4rem auto 0;
-    text-align: center;
-    font-family: var(--font-family-sans);
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    color: var(--color-text-secondary);
-    transition: color var(--transition-duration) var(--transition-easing);
+  display: block;
+  margin: 4rem auto 0;
+  text-align: center;
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-duration) var(--transition-easing);
 }
 
 .back-to-top:hover {
-    color: var(--color-text);
-    text-decoration: none;
+  color: var(--color-text);
+  text-decoration: none;
 }

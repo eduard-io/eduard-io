@@ -4,22 +4,28 @@ title: Eduard Giménez, Product Designer &mdash; Bridging Design & Development
 description: Eduard Giménez is a product designer with a background in development. Currently acting as Interim Head of Design at Gelato, he specializes in creating intuitive, scalable digital experiences.
 keywords: UX designer, UI designer, product designer, user experience, user interface, digital, design, UI/UX, design systems, Gelato, scalable design, intuitive experiences, web design, SaaS design, interface design, product development, minimalism, minimal design, typography, design portfolio, development, web, app
 ---
-  
+
 <header class="initial-load">
   <h1>Eduard Giménez</h1>
   <p>UX & Product Designer based in Madrid</p>
 </header>
 
 <p class="initial-load">
-  Software engineer turned designer, because building the right thing matters as much as building it right. I bridge design and development to craft innovative, human-centered solutions.
+  Software engineer turned designer, because building the right thing matters as much as building it
+  right. I bridge design and development to craft innovative, human-centered solutions.
 </p>
 
 <p class="initial-load">
-  Currently, I'm the Interim Head of UX at <a href="https://gelato.com" target="_blank">Gelato</a>, shaping the future of on-demand printing. Previously, I founded Emtrics and worked with <a href="https://smartprotection.com" target="_blank">Smart Protection</a>, <a href="https://astarastore.com/" target="_blank">Astara Store</a>, <a href="https://clarity.ai" target="_blank">Clarity AI</a>, and Tuenti.
+  Currently, I'm the Interim Head of UX at <a href="https://gelato.com" target="_blank">Gelato</a>,
+  shaping the future of on-demand printing. Previously, I founded Emtrics and worked with
+  <a href="https://smartprotection.com" target="_blank">Smart Protection</a>,
+  <a href="https://astarastore.com/" target="_blank">Astara Store</a>,
+  <a href="https://clarity.ai" target="_blank">Clarity AI</a>, and Tuenti.
 </p>
 
 <p class="initial-load">
-  Always exploring new ideas, see what I'm working on at <a href="https://minilab.co">minilab.co</a>, my personal playground.
+  Always exploring new ideas, see what I'm working on at
+  <a href="https://minilab.co">minilab.co</a>, my personal playground.
 </p>
 
 <ul class="link-list initial-load">
@@ -28,25 +34,35 @@ keywords: UX designer, UI designer, product designer, user experience, user inte
   <li><a href="https://github.com/eduard-io" target="_blank">github</a></li>
 </ul>
 
-
 {% if flags.showExperience %}
-<section class="experience initial-load">
-  {% for job in experience.experience %}
-    <div class="job initial-load">
-      <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="job-logo light-logo">
-      <img src="{{ job.logo_dark }}" alt="{{ job.company }} logo" class="job-logo dark-logo">
-      <p class="dates">{{ job.start }} - {{ job.end or "Present" }}</p> 
-      <h2>{{ job.title }} 
-        {% if job.url %}
-          <span>at <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.company }}</a></span>
-        {% else %}
-          <span>at {{ job.company }}</span>
-        {% endif %}
-      </h2>
-      <p>{{ job.description }}</p>
-    </div>
-  {% endfor %}
-</section>
+  <section class="experience initial-load">
+    {% for job in experience.experience %}
+      <div class="job initial-load">
+        <img src="{{ job.logo }}" alt="{{ job.company }} logo" class="job-logo light-logo" />
+        <img src="{{ job.logo_dark }}" alt="{{ job.company }} logo" class="job-logo dark-logo" />
+        <p class="dates">{{ job.start }} - {{ job.end or "Present" }}</p>
+        <h2>
+          {{ job.title }}
+          {% if job.url %}
+            <span
+              >at
+              <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer"
+                >{{ job.company }}</a
+              ></span
+            >
+          {% else %}
+            <span>at {{ job.company }}</span>
+          {% endif %}
+        </h2>
+        <p>{{ job.description }}</p>
+      </div>
+    {% endfor %}
+  </section>
 
-<a href="#" class="back-to-top initial-load" @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})">Back to top</a>
+  <a
+    href="#"
+    class="back-to-top initial-load"
+    @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
+    >Back to top</a
+  >
 {% endif %}

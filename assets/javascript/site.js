@@ -23,7 +23,7 @@ document.addEventListener('alpine:init', () => {
       if (theme === 'system') {
         theme = this.getSystemTheme(); // Detect system preference
       }
-      
+
       document.documentElement.classList.remove('light', 'dark');
       document.documentElement.classList.add(theme);
 
@@ -31,7 +31,7 @@ document.addEventListener('alpine:init', () => {
     },
 
     getSystemTheme() {
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    },
   });
 });

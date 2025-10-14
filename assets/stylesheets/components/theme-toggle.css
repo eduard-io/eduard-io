@@ -1,33 +1,33 @@
 /* Theme Toggle */
 .theme-toggle {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    font-family: var(--font-family-sans);
-    font-size: 0.875rem;
-    color: var(--color-text);
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family-sans);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .theme-toggle:hover {
-    border-color: var(--color-text);
+  border-color: var(--color-text);
 }
 
 .theme-toggle:focus-visible {
-    outline-offset: 2px;
-    border-color: var(--color-link);
-    background-color: var(--color-link);
-    border-radius: 4px;
+  outline-offset: 2px;
+  border-color: var(--color-link);
+  background-color: var(--color-link);
+  border-radius: 4px;
 }
 
 .theme-toggle:focus-visible svg {
-    fill: var(--color-background);
+  fill: var(--color-background);
 }
 
 .theme-toggle svg {
-    width: 1.5rem;
-    height: 1.5em;
-    fill:  var(--color-text-secondary);
+  width: 1.5rem;
+  height: 1.5em;
+  fill: var(--color-text-secondary);
 }
