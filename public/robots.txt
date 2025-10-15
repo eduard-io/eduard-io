@@ -16,7 +16,7 @@ Disallow: /
 Allow: /sitemap.xml
 
 # Common crawl restrictions
-Disallow: /public/
+Disallow: /
 Disallow: /*.js$
 Disallow: /*.css$
 Disallow: /*.json$

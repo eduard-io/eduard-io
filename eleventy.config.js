@@ -1,6 +1,6 @@
 export default function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./public/'); // Watch /assets for changes
-  eleventyConfig.addPassthroughCopy('public/');
+  eleventyConfig.addWatchTarget('public/'); // Watch /assets for changes
+  eleventyConfig.addPassthroughCopy({ public: '/' });
   eleventyConfig.addPassthroughCopy({ 'robots.txt': 'robots.txt' });
   // eleventyConfig.addPassthroughCopy("assets/images"); // Ensure images are copied to _site
   // eleventyConfig.addPassthroughCopy("assets/javascript"); // Ensure images are copied to _site
@@ -13,6 +13,12 @@ export default function (eleventyConfig) {
   });
 
   return {
+    dir: {
+      input: 'src',
+      includes: '_includes',
+      data: '_data',
+      output: '_site',
+    },
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     templateFormats: ['njk', 'md', 'html'],

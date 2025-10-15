@@ -7,8 +7,8 @@
       "start": "2022",
       "end": "Present",
       "description": "Leading the UX team across Gelato Create and Connect, shaping strategy and ensuring consistency across web and app experiences.",
-      "logo": "/public/images/gelato.svg",
-      "logo_dark": "/public/images/gelato_dark.svg"
+      "logo": "/images/gelato.svg",
+      "logo_dark": "/images/gelato_dark.svg"
     },
     {
       "title": "Lead Product Designer",
@@ -17,8 +17,8 @@
       "start": "2020",
       "end": "2022",
       "description": "  Hired and led the UX team, built the design system, and improved usability through hands-on work in research, IA, and strategy.",
-      "logo": "/public/images/smart_protection.svg",
-      "logo_dark": "/public/images/smart_protection_dark.svg"
+      "logo": "/images/smart_protection.svg",
+      "logo_dark": "/images/smart_protection_dark.svg"
     },
     {
       "title": "Head of Product & Technology",
@@ -27,8 +27,8 @@
       "start": "2019",
       "end": "2020",
       "description": "Led product, tech, and design teams to launch a multi-tenant SaaS platform powering stores for Kia, Mitsubishi, Hyundai, and SsangYong in Spain and LATAM.",
-      "logo": "/public/images/astara.svg",
-      "logo_dark": "/public/images/astara_dark.svg"
+      "logo": "/images/astara.svg",
+      "logo_dark": "/images/astara_dark.svg"
     },
     {
       "title": "Senior Product Manager (UX)",
@@ -36,8 +36,8 @@
       "url": "https://clarity.ai",
       "start": "2018",
       "description": "Worked as a Product Manager leading the UX team to translate ESG data into actionable insights, structuring the platform and improving how users assess impact.",
-      "logo": "/public/images/clarity_ai.svg",
-      "logo_dark": "/public/images/clarity_ai_dark.svg"
+      "logo": "/images/clarity_ai.svg",
+      "logo_dark": "/images/clarity_ai_dark.svg"
     },
     {
       "title": "Digital Product Designer",
@@ -45,8 +45,8 @@
       "start": "2017",
       "end": "2018",
       "description": "Helped startups refine product experiences, define UX strategies, and scale design systems. Notable: Coowry, a micropayment platform for unbanked users.",
-      "logo": "/public/images/hito.svg",
-      "logo_dark": "/public/images/hito_dark.svg"
+      "logo": "/images/hito.svg",
+      "logo_dark": "/images/hito_dark.svg"
     },
     {
       "title": "Co-Founder & CPO/CTO",
@@ -54,8 +54,8 @@
       "start": "2011",
       "end": "2017",
       "description": "Co-founded and led design, product, and tech for one of the first emoticon-based customer feedback platforms.",
-      "logo": "/public/images/emtrics.svg",
-      "logo_dark": "/public/images/emtrics_dark.svg"
+      "logo": "/images/emtrics.svg",
+      "logo_dark": "/images/emtrics_dark.svg"
     }
   ]
 }
