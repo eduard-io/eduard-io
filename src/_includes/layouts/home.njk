@@ -17,5 +17,17 @@
     {% include "components/_theme-toggle.njk" %}
 
     <main>{{ content | safe }}</main>
+
+    <footer class="site-footer">
+      <a
+        href="#"
+        class="back-to-top"
+        @click.prevent="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      >
+        Back to top
+      </a>
+
+      <p class="copyright">&copy; 2014–2025 Eduard Giménez. All rights reserved.</p>
+    </footer>
   </body>
 </html>
