@@ -1,11 +1,10 @@
 {
   "name": "eduard-io",
-  "version": "1.0.0",
-  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/7bee668f-93f2-41fb-99b0-8a7d5ce9d9e6/deploy-status)](https://app.netlify.com/sites/practical-khorana-da0eed/deploys)",
+  "version": "3.0.0",
+  "description": "This is my personal site, can ve viewed at https://eduard.io.",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy",
     "serve": "eleventy --serve",
     "clean": "rm -rf _site",

@@ -4,6 +4,9 @@
 
 This is my personal site, can ve viewed at https://eduard.io.
 
-Designed in [Sketch](https://www.sketch.com), built on [Middleman](https://middlemanapp.com/) using [BEM](http://getbem.com/), [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) and a spark of [Atomic design](http://atomicdesign.bradfrost.com/). Deployed on [Netlify](https://www.netlify.com) with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
+Designed in [Figma](https://www.figma.com/), built with
+[11ty](https://www.11ty.dev) and deployed on [Netlify](https://www.netlify.com)
+with
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
-Built with ❤️, 🧠 and ☕ in Madrid, 2014—2023.
+Built with ❤️, 🧠 and ☕ in Madrid, 2014—2025.
