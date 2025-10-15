@@ -1,6 +1,6 @@
 export default function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./assets/'); // Watch /assets for changes
-  eleventyConfig.addPassthroughCopy('assets/');
+  eleventyConfig.addWatchTarget('./public/'); // Watch /assets for changes
+  eleventyConfig.addPassthroughCopy('public/');
   eleventyConfig.addPassthroughCopy({ 'robots.txt': 'robots.txt' });
   // eleventyConfig.addPassthroughCopy("assets/images"); // Ensure images are copied to _site
   // eleventyConfig.addPassthroughCopy("assets/javascript"); // Ensure images are copied to _site
