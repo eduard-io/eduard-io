@@ -1,7 +1,6 @@
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('public/'); // Watch /assets for changes
   eleventyConfig.addPassthroughCopy({ public: '/' });
-  eleventyConfig.addPassthroughCopy({ 'robots.txt': 'robots.txt' });
 
   // Pass environment variables to templates
   eleventyConfig.addGlobalData('env', {

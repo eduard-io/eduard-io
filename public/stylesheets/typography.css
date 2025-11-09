@@ -1,0 +1,42 @@
+/* Typography */
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-Regular-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-Regular-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-Regular-WebS.woff') format('woff');
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-RegularItalic-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-RegularItalic-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-RegularItalic-WebS.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-Medium-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-Medium-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-Medium-WebS.woff') format('woff');
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-MediumItalic-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-MediumItalic-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-MediumItalic-WebS.woff') format('woff');
+}

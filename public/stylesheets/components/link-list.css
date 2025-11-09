@@ -5,7 +5,9 @@
   padding: 0;
   display: inline-flex;
   font-family: var(--font-family-sans);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-light);
+  margin-block-start: 1.5rem; /* TODO VAR */
 }
 
 .link-list li {
@@ -15,8 +17,8 @@
 }
 
 .link-list li:not(:last-child)::after {
-  content: '•';
+  content: '/';
   margin: 0 0.5rem;
-  color: var(--color-text);
+  color: var(--color-divider);
   font-weight: var(--font-weight-semibold);
 }

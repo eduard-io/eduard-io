@@ -3,25 +3,29 @@ CSS Variables & Theming
 ========================================================================== */
 :root {
   /* Light theme (default) */
-  --color-background: #f9f9f9;
-  --color-text: #444;
-  --color-text-title: #000;
+  --color-background: rgb(253, 253, 253);
+  --color-text: rgb(65, 65, 65);
+  --color-text-title: rgb(0, 0, 0);
   --color-text-secondary: #666;
-  --color-link: #205eef;
+  /* --color-link: #205eef; */
+  --color-link: rgb(65, 65, 65);
   --color-divider: #ddd;
+  --color-highlight: #fcf5ac;
 
   /* Dark theme colors */
-  --color-background-dark: #222222;
-  --color-text-dark: #ccc;
-  --color-text-title-dark: #eee;
+  --color-background-dark: rgb(45, 45, 45);
+  --color-text-dark: rgb(253, 253, 253);
+  --color-text-title-dark: rgb(255, 255, 255);
   --color-text-secondary-dark: #999;
-  --color-link-dark: #7aa2ff;
-  --color-divider-dark: #444;
+  /* --color-link-dark: #7aa2ff; */
+  --color-link-dark: rgb(253, 253, 253);
+  --color-divider: #ddd;
+  --color-highlight-dark: #fcf5ac;
 
   /* Typography */
   --font-family-sans:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
+    'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
+    helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   --font-family-serif: 'New York', 'Iowan Old Style', 'Palatino', 'Times New Roman', Times, serif;
 
   /* Font weights */
@@ -29,6 +33,7 @@ CSS Variables & Theming
   --font-weight-semibold: 600;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
+  --font-weight-light: 300;
 
   /* Transitions */
   --transition-duration: 200ms;

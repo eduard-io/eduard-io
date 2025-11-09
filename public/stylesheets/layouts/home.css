@@ -1,6 +1,7 @@
 /* ==========================================================================
    Layout & Components
    ========================================================================== */
+
 .home {
   min-height: 100vh;
   width: 100%;
@@ -8,9 +9,7 @@
   flex-direction: column;
   padding-top: 20vh;
   background-color: var(--color-background);
-}
 
-.home main {
   max-width: 55ch;
   display: flex;
   flex-direction: column;
@@ -18,6 +17,21 @@
   gap: 1.5rem;
   padding: 2rem;
   margin: 0 auto;
+}
+
+.intro {
+  margin-block-start: 8rem; /* TODO VAR */
+}
+
+.intro__heading {
+  font-size: 1.125rem; /* TODO: variable! */
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4; /* TODO: variable */
+  color: var(--color-text);
+}
+
+.experience {
+  margin-block-start: 8rem; /* TODO VAR */
 }
 
 /* ==========================================================================

@@ -10,11 +10,19 @@
     {% include "includes/_theme.njk" %}
     {% include "includes/_favicons.njk" %}
     {% include "includes/_social.njk" %}
-    {% include "includes/_assets.njk" %}
+    {% include "includes/_stylesheets.njk" %}
+    {% include "includes/_scripts.njk" %}
+    {% include "includes/_analytics.njk" %}
   </head>
 
   <body class="home">
-    {% include "components/_theme-toggle.njk" %}
+    <header class="site-header">
+      <a href="/" class="site-header__brand" aria-label="Home">
+        <span class="site-header__title">Eduard Giménez</span>
+      </a>
+
+      {% include "components/_theme-toggle.njk" %}
+    </header>
 
     <main>{{ content | safe }}</main>
 
