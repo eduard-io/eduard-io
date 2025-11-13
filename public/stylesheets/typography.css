@@ -2,6 +2,27 @@
 @font-face {
   font-family: 'EuclidCircularA';
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-Light-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-Light-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-Light-WebS.woff') format('woff');
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-LightItalic-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-LightItalic-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-LightItalic-WebS.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
@@ -39,4 +60,46 @@
     url('/typefaces/EuclidCircularA-MediumItalic-WebS.eot') format('eot'),
     url('/typefaces/EuclidCircularA-MediumItalic-WebS.woff2') format('woff2'),
     url('/typefaces/EuclidCircularA-MediumItalic-WebS.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-Semibold-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-Semibold-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-Semibold-WebS.woff') format('woff');
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-SemiboldItalic-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-SemiboldItalic-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-SemiboldItalic-WebS.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-Bold-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-Bold-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-Bold-WebS.woff') format('woff');
+}
+@font-face {
+  font-family: 'EuclidCircularA';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('/typefaces/EuclidCircularA-BoldItalic-WebS.eot') format('eot'),
+    url('/typefaces/EuclidCircularA-BoldItalic-WebS.woff2') format('woff2'),
+    url('/typefaces/EuclidCircularA-BoldItalic-WebS.woff') format('woff');
 }
