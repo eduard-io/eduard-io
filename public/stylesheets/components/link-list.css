@@ -22,3 +22,11 @@
   color: var(--color-divider);
   font-weight: var(--font-weight-semibold);
 }
+
+.link-list a {
+  color: var(--color-text-secondary);
+}
+
+.link-list a:hover {
+  color: var(--color-link);
+}

@@ -8,7 +8,7 @@ CSS Variables & Theming
   --color-text-title: rgb(0, 0, 0);
   --color-text-secondary: #666;
   /* --color-link: #205eef; */
-  --color-link: rgb(65, 65, 65);
+  --color-link: rgb(254, 113, 46);
   --color-divider: #ddd;
   --color-highlight: #fcf5ac;
 
@@ -23,6 +23,8 @@ CSS Variables & Theming
   --color-highlight-dark: #fcf5ac;
 
   /* Typography */
+  /* --font-family-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
   --font-family-sans:
     'EuclidCircularA', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
     helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
