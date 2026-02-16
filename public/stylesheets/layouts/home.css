@@ -28,6 +28,7 @@
   font-weight: var(--font-weight-regular);
   line-height: 1.4; /* TODO: variable */
   color: var(--color-text);
+  margin-bottom: 1rem;
 }
 
 .experience {
