@@ -1,119 +1,146 @@
-/***
-    The new CSS reset - version 1.11.3 (last updated 25.08.2024)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+/**
+ * An opininonated CSS reset by Vale.rocks
+ * https://vale.rocks/posts/css-reset?utm_source=heydesigner.com
  */
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@layer {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  }
 
-/* Fix mobile Safari increase font-size on landscape mode */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-/* Reapply the pointer cursor for anchor tags */
-a,
-button {
-  cursor: revert;
-}
+  html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    block-size: 100%;
+  }
 
-/* Remove list styles (bullets/numbers) */
-ol,
-ul,
-menu,
-summary {
-  list-style: none;
-}
+  body {
+    min-block-size: 100%;
+  }
 
-/* Firefox: solve issue where nested ordered lists continue numbering from parent (https://bugzilla.mozilla.org/show_bug.cgi?id=1881517) */
-ol {
-  counter-reset: revert;
-}
+  img,
+  iframe,
+  audio,
+  video,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
 
-/* For images to not be able to exceed their container */
-img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
+  svg {
+    max-inline-size: 100%;
+  }
 
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
+  svg:not([fill]) {
+    fill: currentColor;
+  }
 
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input,
-textarea {
-  -webkit-user-select: auto;
-}
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
+  textarea {
+    resize: vertical;
+  }
 
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
+  fieldset,
+  iframe {
+    border: none;
+  }
 
-/* preformatted text - use only for this feature */
-:where(pre) {
-  all: revert;
-  box-sizing: border-box;
-}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
 
-/* reset default text opacity of input placeholder */
-::placeholder {
-  color: unset;
-}
+  p {
+    text-wrap: pretty;
+    font-variant-numeric: proportional-nums;
+  }
 
-/* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
-:where([hidden]) {
-  display: none;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-variant-numeric: lining-nums;
+  }
 
-/* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly.
-   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable='false'])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
+  p,
+  blockquote,
+  q,
+  figcaption,
+  li {
+    hanging-punctuation: first allow-end last;
+  }
 
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable='true']) {
-  -webkit-user-drag: element;
-}
+  input,
+  label,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+  }
 
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-  all: revert;
-  box-sizing: border-box;
-}
+  math,
+  time,
+  table {
+    font-variant-numeric: tabular-nums lining-nums slashed-zero;
+  }
 
-/* Remove details summary webkit styles */
-::-webkit-details-marker {
-  display: none;
+  code {
+    font-variant-numeric: slashed-zero;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  abbr {
+    font-variant-caps: all-small-caps;
+    text-decoration: none;
+
+    &[title] {
+      cursor: help;
+      text-decoration: underline dotted;
+    }
+  }
+
+  sup,
+  sub {
+    line-height: 0;
+  }
+
+  :disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline-offset: 0.2rem;
+  }
 }

@@ -9,6 +9,7 @@
   color: var(--color-text);
   background-color: transparent;
   cursor: pointer;
+  border: none;
 }
 
 .theme-toggle:hover {
