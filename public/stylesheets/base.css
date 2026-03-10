@@ -69,6 +69,12 @@ h3 {
 
 p {
   line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: 400;
+  color: var(--color-text-strong);
 }
 
 /* Links */

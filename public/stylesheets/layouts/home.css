@@ -21,6 +21,7 @@
 
 .intro {
   margin-block-start: 8rem; /* TODO VAR */
+  font-weigh: 600;
 }
 
 .intro__heading {
