@@ -37,9 +37,12 @@ test('static output preserves URLs, assets, contact subjects and deployment boun
         assert.ok((await stat(join(output, match[1]))).size > 0, match[1]);
       }
       for (const asset of [
-        'favicons/favicon.ico',
-        'favicons/favicon.svg',
-        'favicons/favicon.png',
+        'favicons/favicon-16x16.png',
+        'favicons/favicon-32x32.png',
+        'favicons/apple-touch-icon.png',
+        'favicons/android-chrome-192x192.png',
+        'favicons/android-chrome-512x512.png',
+        'favicons/site.webmanifest',
         'images/gelato.svg',
         'sitemap.xml',
       ]) {

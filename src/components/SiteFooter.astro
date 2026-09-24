@@ -4,11 +4,16 @@ import { site, emailLink } from '../data/site';
 
 <footer class="site-footer narrow">
   <nav aria-label="Contact and social links">
-    <a href={emailLink('Hello Eduard!')}>Email <span aria-hidden="true">↗</span></a>
+    <a href={emailLink('Hello Eduard!')}
+      ><span class="link-label">Email</span><span aria-hidden="true">↗</span></a
+    >
     <span aria-hidden="true">·</span>
-    <a href={site.linkedin}>LinkedIn <span aria-hidden="true">↗</span></a>
+    <a href={site.linkedin}
+      ><span class="link-label">LinkedIn</span><span aria-hidden="true">↗</span></a
+    >
     <span aria-hidden="true">·</span>
-    <a href={site.github}>GitHub <span aria-hidden="true">↗</span></a>
+    <a href={site.github}><span class="link-label">GitHub</span><span aria-hidden="true">↗</span></a
+    >
   </nav>
   <div class="signature">
     <p>© {new Date().getFullYear()} {site.name}</p><p class="motto" lang="la">
@@ -36,6 +41,12 @@ import { site, emailLink } from '../data/site';
   a {
     display: inline-flex;
     gap: var(--space-1);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:hover .link-label {
+    text-decoration: underline;
   }
   .signature {
     display: grid;

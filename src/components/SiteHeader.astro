@@ -1,14 +1,40 @@
 <header class="site-header narrow">
-  <a href="/" aria-label="Eduard Giménez — home"
-    ><img src="/images/v4/eye.svg" width="72" height="59" alt="" /></a
-  >
+  <a href="/" aria-label="Eduard Giménez — home">
+    <img class="eye-open" src="/images/v4/eye.svg" width="72" height="59" alt="" />
+    <img class="eye-closed" src="/images/v4/eye-closed.svg" width="72" height="35" alt="" />
+  </a>
 </header>
 <style>
   a {
     display: block;
-    width: fit-content;
+    position: relative;
+    width: 72px;
+    height: 59px;
+    overflow: hidden;
   }
   img {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
     transform: scaleY(-1);
+    transition: opacity 100ms ease-out;
+  }
+  .eye-open {
+    inset-block-start: 0;
+  }
+  .eye-closed {
+    bottom: 0;
+    opacity: 0;
+  }
+  a:hover .eye-open {
+    opacity: 0;
+  }
+  a:hover .eye-closed {
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: none;
+    }
   }
 </style>
