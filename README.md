@@ -3,6 +3,8 @@
 A static Astro portfolio with reusable Astro components, plain CSS, and no client framework.
 Designed in Figma, built with Codex support and hosted on the existing Netlify site.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7bee668f-93f2-41fb-99b0-8a7d5ce9d9e6/deploy-status)](https://app.netlify.com/sites/practical-khorana-da0eed/deploys)
+
 ## Local development
 
 Use Node 24.8.0 (`.nvmrc`) and npm. Run `npm ci`, supply the licensed fonts below, then `npm run dev`.
