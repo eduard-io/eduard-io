@@ -4,3 +4,8 @@ dist
 .cache
 .11tycache
 coverage
+public/images
+public/favicons
+public/stylesheets
+public/javascript
+.claude

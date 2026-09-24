@@ -1,0 +1,117 @@
+---
+import { Image } from 'astro:assets';
+import ContactButton from './ContactButton.astro';
+import { emailLink } from '../data/site';
+import type { Project } from '../data/projects';
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+
+<article class="project" aria-labelledby={`${project.id}-title`}>
+  <div class:list={['preview', project.id]}>
+    <Image
+      src={project.image}
+      alt={project.alt}
+      widths={[480, 720, 960, 1440]}
+      sizes="(min-width: 1100px) 645px, (min-width: 700px) 65vw, 140vw"
+      format="webp"
+      loading="lazy"
+    />
+  </div>
+  <div class="info">
+    <div class="heading">
+      <h3 id={`${project.id}-title`}>{project.title}</h3>
+      <p class="product">{project.product}</p>
+    </div>
+    <p>{project.description}</p>
+    <p class="outcome">{project.outcome}</p>
+    <ContactButton
+      href={emailLink(project.subject)}
+      label={`Discuss this project: ${project.title}`}>Discuss this project</ContactButton
+    >
+  </div>
+</article>
+<style>
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    min-width: 0;
+  }
+  .preview {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+  }
+  .preview img {
+    display: block;
+    position: absolute;
+    max-width: none;
+  }
+  .workflow-builder img {
+    width: 143.39%;
+    height: 134.43%;
+    left: 0;
+    top: 0.12%;
+  }
+  .gelato-connect-app img {
+    width: 66.48%;
+    height: 93.83%;
+    left: 16.8%;
+    top: 3.1%;
+  }
+  .mockup-studio img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .growth-activation img {
+    width: 123.15%;
+    height: 123.15%;
+    left: -21.72%;
+    top: -14.54%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding-block: var(--space-1);
+    min-width: 0;
+  }
+  .heading {
+    margin-bottom: -12px;
+  }
+  h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .product {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: var(--muted);
+  }
+  .outcome {
+    font-weight: 600;
+  }
+  @media (min-width: 1100px) {
+    .project {
+      flex-direction: row;
+    }
+    .preview {
+      width: 450px;
+      flex: 0 0 450px;
+    }
+    .info {
+      flex: 1;
+    }
+  }
+</style>

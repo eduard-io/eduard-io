@@ -1,0 +1,67 @@
+---
+import { site, emailLink } from '../data/site';
+---
+
+<footer class="site-footer narrow">
+  <nav aria-label="Contact and social links">
+    <a href={emailLink('Hello Eduard!')}
+      ><span class="link-label">Email</span><span aria-hidden="true">↗</span></a
+    >
+    <span aria-hidden="true">·</span>
+    <a href={site.linkedin}
+      ><span class="link-label">LinkedIn</span><span aria-hidden="true">↗</span></a
+    >
+    <span aria-hidden="true">·</span>
+    <a href={site.github}><span class="link-label">GitHub</span><span aria-hidden="true">↗</span></a
+    >
+  </nav>
+  <div class="signature">
+    <p>© {new Date().getFullYear()} {site.name}</p><p class="motto" lang="la">
+      Firmitas, utilitas, venustas
+    </p>
+  </div>
+</footer>
+<style>
+  .site-footer {
+    border-top: 0.5px solid var(--border);
+    padding: var(--space-5) 0 var(--space-3);
+    display: grid;
+    gap: var(--space-5);
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  nav > span {
+    color: var(--muted);
+  }
+  a {
+    display: inline-flex;
+    gap: var(--space-1);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:hover .link-label {
+    text-decoration: underline;
+  }
+  .signature {
+    display: grid;
+    gap: var(--space-1);
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  .signature > p:first-child {
+    opacity: 0.8;
+  }
+  .motto {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.028px;
+  }
+</style>

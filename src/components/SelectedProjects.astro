@@ -1,0 +1,26 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+
+<section class="projects wide" aria-labelledby="projects-title">
+  <h2 id="projects-title">Selected projects</h2>
+  <div class="project-list">{projects.map((project) => <ProjectCard project={project} />)}</div>
+</section>
+<style>
+  h2 {
+    min-height: 48px;
+    margin-bottom: var(--space-3);
+  }
+  .project-list {
+    display: grid;
+    gap: var(--space-7);
+    padding-inline: 1px;
+  }
+  @media (min-width: 700px) and (max-width: 1099px) {
+    .project-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 48px 32px;
+    }
+  }
+</style>
