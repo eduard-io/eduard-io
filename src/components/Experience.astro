@@ -1,0 +1,80 @@
+---
+import { experience } from '../data/experience';
+---
+
+<section class="experience narrow" aria-labelledby="experience-title">
+  <h2 id="experience-title">Experience</h2>
+  <ul>
+    {
+      experience.map((job) => (
+        <li>
+          <div class="company">
+            <span class:list={['icon', job.icon]}>
+              <img src={`/images/v4/${job.icon}.svg`} alt="" />
+            </span>
+            <>
+              <h3>{job.company}</h3>
+              <p class="dates">{job.dates}</p>
+            </>
+          </div>
+          {job.roles.map((role) => (
+            <div class="role">
+              <p>{role.title}</p>
+              {role.dates && <p class="dates role-dates">{role.dates}</p>}
+            </div>
+          ))}
+        </li>
+      ))
+    }
+  </ul>
+</section>
+<style>
+  h2 {
+    margin-bottom: var(--space-3);
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    gap: var(--space-3);
+  }
+  .company {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    column-gap: var(--space-2);
+    align-items: start;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+  }
+  .icon img {
+    max-width: none;
+  }
+  .dates {
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .role {
+    padding-left: 36px;
+  }
+  .role-dates {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+  @media (min-width: 700px) {
+    .role {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: baseline;
+    }
+  }
+</style>

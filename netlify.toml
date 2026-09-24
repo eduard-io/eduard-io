@@ -1,17 +1,9 @@
-# netlify.toml
-
 [build]
   command = "npm run build"
-  publish = "_site"
+  publish = "dist"
 
-# Optional: Netlify dev configuration
-#[dev]
-#  command = "npx @11ty/eleventy --serve"
-#  port = 8888
-#  targetPort = 8080
+[build.environment]
+  NODE_VERSION = "24.8.0"
 
-# Example redirects (remove or customize if not needed)
-#[[redirects]]
-#  from = "/*"
-#  to = "/index.html"
-#  status = 200
+# CONTEXT is supplied by Netlify. Preview indexing headers are generated
+# by astro.config.mjs; analytics are included only in production builds.

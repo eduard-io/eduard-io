@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+import '@fontsource/cinzel/latin-400.css';
+import { site } from '../data/site';
+interface Props {
+  title?: string;
+  noindex?: boolean;
+}
+const { title = site.title, noindex = false } = Astro.props;
+const production = import.meta.env.CONTEXT === 'production';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={site.description} />
+    <meta name="author" content={site.name} />
+    <meta name="theme-color" content="#fdfdfd" />
+    <link rel="canonical" href={canonical} />
+    {(!production || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicons/favicon.png" />
+    <link
+      rel="preload"
+      href="/typefaces/mori/PPMori-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/typefaces/mori/PPMori-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    {
+      production && (
+        <>
+          <link rel="preconnect" href="https://cloud.umami.is" />
+          <script
+            is:inline
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="02ce85e6-12f5-4f87-b7d9-b56e4b80c20c"
+          />
+        </>
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+  </body>
+</html>

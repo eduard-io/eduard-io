@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Introduction from '../components/Introduction.astro';
+import SelectedProjects from '../components/SelectedProjects.astro';
+import Experience from '../components/Experience.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<BaseLayout>
+  <SiteHeader />
+  <main id="main"><Introduction /><SelectedProjects /><Experience /></main>
+  <SiteFooter />
+</BaseLayout>

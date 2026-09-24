@@ -2,12 +2,12 @@
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "es5",
-  "plugins": ["prettier-plugin-jinja-template"],
+  "plugins": ["prettier-plugin-astro"],
   "overrides": [
     {
-      "files": ["**/*.njk", "**/*.nunj", "**/*.jinja", "**/*.html"],
+      "files": "*.astro",
       "options": {
-        "parser": "jinja-template"
+        "parser": "astro"
       }
     }
   ]
