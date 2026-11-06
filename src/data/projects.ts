@@ -21,7 +21,7 @@ export const projects = [
     product: 'Gelato Connect',
     description:
       'I focused the app redesign on what managers needed away from their desks: production status, alerts, and actions. We later added tools for handling jobs, inventory, and orders on the floor.',
-    outcome: 'Daily active clients grew from 26% to ~85%.',
+    outcome: 'Daily active clients grew from 25% to 85%.',
     image: app,
     alt: 'Gelato Connect mobile screens showing a production dashboard and job list.',
     subject: 'Enquiry about Gelato Connect App',
@@ -32,7 +32,7 @@ export const projects = [
     product: 'Gelato Create',
     description:
       'Sellers were using external tools to get product images that matched their style. I brought mockup creation into Gelato, with an editor and reusable layouts across products and variants.',
-    outcome: 'More than 14,000 mockups created since launch.',
+    outcome: 'More than 14,000 mockups created in the first six months after launch.',
     image: mockup,
     alt: 'Mockup Studio editor placing artwork into a framed print in a room.',
     subject: 'Enquiry about Mockup Studio',

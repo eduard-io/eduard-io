@@ -11,7 +11,7 @@ export const experience: Job[] = [
     icon: 'gelato',
     dates: '2022 – 2026',
     roles: [
-      { title: 'Interim Head of UX', dates: '2024 – 2026' },
+      { title: 'Interim Head of UX Research & Design', dates: '2024 – 2026' },
       { title: 'Lead Product Designer', dates: '2022 – 2026' },
     ],
   },
@@ -25,7 +25,7 @@ export const experience: Job[] = [
     company: 'Astara Store (Trive)',
     icon: 'astara',
     dates: '2019 – 2020',
-    roles: [{ title: 'Head of Product Design & Technology' }],
+    roles: [{ title: 'Head of Product & Technology' }],
   },
   {
     company: 'Clarity AI',
