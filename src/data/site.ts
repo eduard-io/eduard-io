@@ -1,8 +1,10 @@
 export const site = {
   name: 'Eduard Giménez',
-  title: 'Eduard Giménez, Product Designer — Bridging Design & Development',
+  title: 'Eduard Giménez - Lead Product Designer in Madrid',
   description:
-      'Eduard Giménez is a Lead Product Designer based in Madrid, combining hands-on design, team leadership and engineering experience to simplify complex B2B software.',
+    'Explore Eduard Giménez’s work in complex B2B software. Lead Product Designer combining hands-on design, team leadership and an engineering background.',
+  description_social:
+    'Making complex B2B software easier to use. Selected work combining hands-on design, team leadership and an engineering background.',
   email: 'hello@eduard.io',
   linkedin: 'https://www.linkedin.com/in/eduard-io/',
   github: 'https://github.com/eduard-io',
